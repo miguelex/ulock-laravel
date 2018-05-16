@@ -1,0 +1,434 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"diso",
+				"d/{d}/dispositivos"
+			],
+			[
+				"di",
+				"dispositivo"
+			],
+			[
+				"reque",
+				"$request〔variable〕"
+			],
+			[
+				"c",
+				"clientes"
+			],
+			[
+				"pais",
+				"pais_id"
+			],
+			[
+				"idio",
+				"idioma_id"
+			],
+			[
+				"estu",
+				"$estudiantes〔variable〕"
+			],
+			[
+				"estudiante",
+				"estudiante_id"
+			],
+			[
+				"es",
+				"estudiantes"
+			],
+			[
+				"crear",
+				"crearRespuestaErronea〔function〕"
+			],
+			[
+				"cu",
+				"$curso〔variable〕"
+			],
+			[
+				"curso",
+				"curso_id"
+			],
+			[
+				"e",
+				"$estudiante〔variable〕"
+			],
+			[
+				"est",
+				"estudiante_id"
+			],
+			[
+				"req",
+				"$request〔variable〕"
+			],
+			[
+				"profesor",
+				"profesor_id"
+			],
+			[
+				"cur",
+				"cursos"
+			],
+			[
+				"arra",
+				"array_rand〔function〕"
+			],
+			[
+				"mt",
+				"mt_rand"
+			],
+			[
+				"bel",
+				"belongsToMany〔function〕"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 458,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 741.0
+	},
+	"console":
+	{
+		"height": 171.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/ulock"
+	],
+	"file_history":
+	[
+		"/C/ULock/database/migrations/2018_05_02_103010_GpsMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103037_AccesoMigrations.php",
+		"/C/ULock/app/Http/Controllers/MarcaController.php",
+		"/C/ULock/app/Http/Controllers/IdiomaController.php",
+		"/C/ULock/app/Http/Controllers/DispositivoHuellaController.php",
+		"/C/ULock/app/Http/Controllers/DispositivoAccesoController.php",
+		"/C/ULock/app/Http/Controllers/DispositivoGpsController.php",
+		"/C/ULock/app/Huella.php",
+		"/C/ULock/app/Gps.php",
+		"/C/ULock/app/Acceso.php",
+		"/C/ULock/app/Http/routes.php",
+		"/C/ULock/database/migrations/2018_05_02_102836_DispositivoMigrations.php",
+		"/C/ULock/app/Dispositivo.php",
+		"/C/ULock/app/Http/Controllers/ClienteDispositivoController.php",
+		"/C/ULock/app/Http/Controllers/DispositivoController.php",
+		"/C/ULock/app/Http/Controllers/TipoDispositivoController.php",
+		"/C/ULock/app/Http/Controllers/MarcaDispositivoController.php",
+		"/C/ULock/vendor/illuminate/database/Connection.php",
+		"/C/ULock/app/Movil.php",
+		"/C/ULock/app/Http/Controllers/MovilesController.php",
+		"/C/ULock/app/Cliente.php",
+		"/C/ULock/app/Http/Controllers/ClienteController.php",
+		"/C/ULock/app/Http/Controllers/Controller.php",
+		"/C/ULock/database/migrations/2018_05_02_102702_ClienteMigrations.php",
+		"/C/ULock/app/Http/Controllers/TraduccionController.php",
+		"/C/ULock/app/Pais.php",
+		"/C/ULock/app/Provincia.php",
+		"/C/ULock/app/Http/Controllers/IdiomaPaisController.php",
+		"/C/ULock/app/Http/Controllers/PaisProvinciaController.php",
+		"/C/ULock/app/Http/Controllers/ProvinciaController.php",
+		"/C/ULock/app/Idioma.php",
+		"/C/ULock/app/Http/Controllers/PaisController.php",
+		"/C/ULock/database/migrations/2018_05_02_102816_MovilMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103025_HuellaMigrations.php",
+		"/C/ULock/database/migrations/2018_05_04_073518_add_genero_clientes2.php",
+		"/C/ULock/database/migrations/2018_05_04_073144_add_genero_cliente.php",
+		"/C/ULock/.env",
+		"/C/ULock/app/Tipo.php",
+		"/C/ULock/app/Marca.php",
+		"/C/ULock/app/Http/Controllers/TipoController.php",
+		"/C/ULock/database/migrations/2018_05_02_103236_DispositivoTipoOrdenMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103205_ClienteDispositivoMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103141_DispositivoMovilMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103117_AccionClienteMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103057_IdiomaPaisMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102924_TipoOrdenPagosMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102856_ConfiguracionPagosMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102803_AccionMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102744_TipoPagoMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102730_MarcaMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102718_TipoMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_101937_ProvinciaMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_101922_IdiomaMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_101904_PaisMigrations.php",
+		"/C/ULock/database/migrations/2018_04_27_091150_ProvinciaMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091125_PaisMigration.php",
+		"/C/ULock/database/migrations/2018_04_30_091150_ProvinciaMigration.php",
+		"/C/ULock/database/migrations/2018_04_30_091338_MovilMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091528_HuellaMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091826_DispositivoTipoORdenMigration.php",
+		"/C/ULock/app/TipoOrden.php",
+		"/C/ULock/database/migrations/2018_04_27_091721_DispositivoMovilMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091748_ClienteDispositivoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091630_IdiomaPaisMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091658_AccionClienteMigration.php",
+		"/C/ULock/app/Accion.php",
+		"/C/ULock/database/migrations/2018_04_27_090940_IdiomaMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091210_ClienteMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091546_AccesoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091513_GpsMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091457_TipoOrdenMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091425_ConfiguracionPagoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091405_DispositivoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091338_MovilMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091324_AccionMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091301_TipoPagoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091243_MarcaMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091225_TipoMigration.php",
+		"/C/ULock/app/accion_cliente.php",
+		"/C/ULock/app/idioma_pais.php",
+		"/C/ULock/app/ConfiguracionPago.php",
+		"/C/ULock/app/TipoPago.php",
+		"/C/ULock/app/Pago.php",
+		"/C/ULock/app/Orden.php",
+		"/C/ULock/app/Diario.php",
+		"/C/ULock/app/MovilDispositivo.php",
+		"/C/ULock/app/Traduccion.php",
+		"/C/ULock/app/Pagos.php",
+		"/C/ULock/resources/lang/es/validation.php",
+		"/C/ULock/bootstrap/app.php",
+		"/C/LumenAPI/app/Exceptions/Handler.php",
+		"/C/LumenAPI/app/Profesor.php",
+		"/C/LumenAPI/app/Estudiante.php",
+		"/C/LumenAPI/app/Curso.php",
+		"/C/LumenAPI/composer.json",
+		"/C/LumenAPI/bootstrap/app.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_110151_create_oauth_scopes_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_110304_create_oauth_grants_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_110403_create_oauth_grant_scopes_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_110459_create_oauth_clients_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_110557_create_oauth_client_endpoints_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_110705_create_oauth_client_scopes_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_110817_create_oauth_client_grants_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_111002_create_oauth_sessions_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_111109_create_oauth_session_scopes_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_111254_create_oauth_auth_codes_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_111403_create_oauth_auth_code_scopes_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_111518_create_oauth_access_tokens_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_111657_create_oauth_access_token_scopes_table.php",
+		"/C/LumenAPI/database/migrations/2014_04_24_111810_create_oauth_refresh_tokens_table.php",
+		"/C/LumenAPI/database/migrations/2018_04_18_104703_ProfesorMigration.php",
+		"/C/LumenAPI/database/migrations/2018_04_18_104710_EstudianteMigration.php",
+		"/C/LumenAPI/database/migrations/2018_04_18_104713_CursoMigration.php",
+		"/C/LumenAPI/database/migrations/2018_04_18_104717_CursoEstudianteMigration.php",
+		"/C/LumenAPI/database/factories/ModelFactory.php",
+		"/C/LumenAPI/database/seeds/DatabaseSeeder.php",
+		"/C/LumenAPI/.env",
+		"/C/LumenAPI/app/Http/Controllers/ProfesorCursoController.php",
+		"/C/LumenAPI/app/Http/Controllers/ProfesorController.php",
+		"/C/LumenAPI/app/Http/Controllers/EstudianteController.php",
+		"/C/LumenAPI/app/Http/Controllers/CursoEstudianteController.php",
+		"/C/LumenAPI/app/Http/routes.php",
+		"/C/LumenAPI/database/seeds/OAuthClientSeeder.php",
+		"/C/LumenAPI/config/oauth2.php",
+		"/C/LumenAPI/app/Http/Controllers/Controller.php",
+		"/C/LumenAPI/app/Http/Controllers/CursoController.php",
+		"/C/LumenAPI/database/migrations/2018_04_18_103657_CursoEstudianteMigration.php",
+		"/C/LumenAPI/database/migrations/2018_04_18_103652_CursoMigration.php"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".env",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 50.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 136.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ulock.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 339.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
