@@ -9,7 +9,19 @@
 
 	<div class="list-group">
 		<a href="{{url('/clientes/unico')}}" class="list-group-item">Obtener un cliente</a>
-		<a href="#" class="list-group-item">Obtener una marca</a>
-		<a href="#" class="list-group-item">Obtener un tipo</a>
+		<a href="{{url('/marcas/unico')}}" class="list-group-item">Obtener una marca</a>
+		<a href="{{url('/tipos/unico')}}" class="list-group-item">Obtener un tipo</a>
+	</div>
+
+	<div class="list-group">
+		<a href="{{url('/clientes/agregar')}}" class="list-group-item">Agregar Un Cliente</a>
+		<a href="{{url('/marcas/agregar')}}" class="list-group-item">Agregar Una Marca</a>
+		<a href="{{url('/tipos/agregar')}}" class="list-group-item">Agregar Un Tipo</a>
+	</div>
+
+	<div class="list-group">
+		<!--<a href="{{url('/clientes/agregar')}}" class="list-group-item">Agregar Un Cliente</a>-->
+		<a href="{{url('/marcas/actualizar')}}" class="list-group-item">Actualizar Una Marca</a>
+		<!--<a href="{{url('/tipos/agregar')}}" class="list-group-item">Agregar Un Tipo</a>-->
 	</div>
 @endsection

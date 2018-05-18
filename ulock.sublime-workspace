@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bs3-lis",
+				"bs3-list-group:linked\tbs3-list-group-linked"
+			],
+			[
+				"bs3-c",
+				"bs3-cdn\tbs3-cdn"
+			],
+			[
+				"bs3",
+				"bs3-col\tbs3-col"
+			],
+			[
 				"diso",
 				"d/{d}/dispositivos"
 			],
@@ -92,11 +104,39 @@
 	"buffers":
 	[
 		{
-			"file": ".env",
+			"file": "app/Http/Controllers/ClientesController.php",
 			"settings":
 			{
-				"buffer_size": 458,
+				"buffer_size": 1500,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 1152,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/clientes/agregar.blade.php",
+			"settings":
+			{
+				"buffer_size": 2084,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/principal.blade.php",
+			"settings":
+			{
+				"buffer_size": 756,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -108,9 +148,13 @@
 	"command_palette":
 	{
 		"height": 490.0,
-		"last_filter": "ins",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"i",
+				"Package Control: Install Package"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -141,10 +185,38 @@
 	},
 	"expanded_folders":
 	[
-		"/C/wamp64/www/ulock"
+		"/C/wamp64/www/ulock",
+		"/C/wamp64/www/ulock/app",
+		"/C/wamp64/www/ulock/app/Http",
+		"/C/wamp64/www/ulock/app/Http/Controllers",
+		"/C/wamp64/www/ulock/app/Http/Requests",
+		"/C/wamp64/www/ulock/resources",
+		"/C/wamp64/www/ulock/resources/certs",
+		"/C/wamp64/www/ulock/resources/views",
+		"/C/wamp64/www/ulock/resources/views/clientes",
+		"/C/wamp64/www/ulock/resources/views/marcas",
+		"/C/wamp64/www/ulock/resources/views/tipos"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/ulock/app/Http/Controllers/TiposController.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/mostrar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/mostrar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/unico.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/unico.blade.php",
+		"/C/wamp64/www/ulock/app/Http/routes.php",
+		"/C/wamp64/www/ulock/resources/views/principal.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/MarcasController.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/ClientesController.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/mostrar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/unico.blade.php",
+		"/C/wamp64/www/ulock/resources/views/layouts/master.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/todos.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/Controller.php",
+		"/C/wamp64/www/ulock/app/Http/Requests/UnicoRequest.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/todos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/todos.blade.php",
+		"/C/wamp64/www/ulock/database/factories/ModelFactory.php",
 		"/C/ULock/database/migrations/2018_05_02_103010_GpsMigrations.php",
 		"/C/ULock/database/migrations/2018_05_02_103037_AccesoMigrations.php",
 		"/C/ULock/app/Http/Controllers/MarcaController.php",
@@ -254,25 +326,7 @@
 		"/C/LumenAPI/database/migrations/2014_04_24_111403_create_oauth_auth_code_scopes_table.php",
 		"/C/LumenAPI/database/migrations/2014_04_24_111518_create_oauth_access_tokens_table.php",
 		"/C/LumenAPI/database/migrations/2014_04_24_111657_create_oauth_access_token_scopes_table.php",
-		"/C/LumenAPI/database/migrations/2014_04_24_111810_create_oauth_refresh_tokens_table.php",
-		"/C/LumenAPI/database/migrations/2018_04_18_104703_ProfesorMigration.php",
-		"/C/LumenAPI/database/migrations/2018_04_18_104710_EstudianteMigration.php",
-		"/C/LumenAPI/database/migrations/2018_04_18_104713_CursoMigration.php",
-		"/C/LumenAPI/database/migrations/2018_04_18_104717_CursoEstudianteMigration.php",
-		"/C/LumenAPI/database/factories/ModelFactory.php",
-		"/C/LumenAPI/database/seeds/DatabaseSeeder.php",
-		"/C/LumenAPI/.env",
-		"/C/LumenAPI/app/Http/Controllers/ProfesorCursoController.php",
-		"/C/LumenAPI/app/Http/Controllers/ProfesorController.php",
-		"/C/LumenAPI/app/Http/Controllers/EstudianteController.php",
-		"/C/LumenAPI/app/Http/Controllers/CursoEstudianteController.php",
-		"/C/LumenAPI/app/Http/routes.php",
-		"/C/LumenAPI/database/seeds/OAuthClientSeeder.php",
-		"/C/LumenAPI/config/oauth2.php",
-		"/C/LumenAPI/app/Http/Controllers/Controller.php",
-		"/C/LumenAPI/app/Http/Controllers/CursoController.php",
-		"/C/LumenAPI/database/migrations/2018_04_18_103657_CursoEstudianteMigration.php",
-		"/C/LumenAPI/database/migrations/2018_04_18_103652_CursoMigration.php"
+		"/C/LumenAPI/database/migrations/2014_04_24_111810_create_oauth_refresh_tokens_table.php"
 	],
 	"find":
 	{
@@ -290,6 +344,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"marcas",
+			"Marcas",
+			"marcas",
+			"marca",
+			"marcas",
+			"Cliente",
+			"Clientes",
+			"cliente",
+			"clientes",
+			"Clientes",
+			"clientes",
+			"Clientes",
+			"clientes",
+			"Clientes",
+			"clientes",
+			"Clientes",
+			"clientes",
+			"Clientes",
+			"Estudiantes",
+			"estudiantes",
+			"Estudiantes",
+			"estudiantes",
+			"ClienteHTTP",
+			"estudiante",
+			"Estudiante",
+			"estudiante",
+			"estudiantes",
+			"cliente",
+			"clientes",
+			"cliente",
+			"clientes"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -307,35 +392,140 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": ".env",
-					"semi_transient": true,
+					"file": "app/Http/Controllers/ClientesController.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 458,
+						"buffer_size": 1500,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1164,
+								1164
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"SL.24.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1124,
+								1124
+							]
+						],
+						"settings":
+						{
+							"SL.25.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/clientes/agregar.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1326,
+								1326
+							]
+						],
+						"settings":
+						{
+							"SL.26.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 671.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resources/views/principal.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 756,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								756,
+								756
+							]
+						],
+						"settings":
+						{
+							"SL.27.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
