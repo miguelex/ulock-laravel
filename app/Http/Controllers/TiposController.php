@@ -8,20 +8,12 @@ use ulock\Http\Requests;
 
 use ulock\Http\Requests\UnicoRequest;
 
-class TiposController extends Controller
+class TiposController extends ApiController
 {
     public function mostrarTipos()
     {
         $tipos = $this->obtenerTodosLosTipos();
         return view('tipos.todos', ['tipos' => $tipos]);
-    }
-
-    protected function obtenerTodosLosTipos()
-    {
-        $respuesta = $this->realizarPeticion('GET', 'https://ziptest.com.es/tipos');
-        $datos = json_decode($respuesta);
-        $tipos = $datos->data;
-        return $tipos;
     }
 
     public function mostrarTipo()
@@ -35,15 +27,7 @@ class TiposController extends Controller
         $tipo = $this->obtenerUnTipo($id);
         return view('tipos.mostrar', ['tipo' => $tipo]);
     }
-    
-    protected function obtenerUnTipo($id)
-    {
-        $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/tipos/{$id}");
-        $datos = json_decode($respuesta);
-        $tipo = $datos->data;
-        return $tipo;
-    }
-
+        
     public function agregarTipo()
     {
         return view('tipos.agregar');
@@ -51,7 +35,40 @@ class TiposController extends Controller
 
     public function crearTipo(Request $request)
     {
-        $respuesta = $this->realizarPeticion('POST', 'https://ziptest.com.es/tipos', ['form_params' => $request->all()]);
+        $this->almacenarTipo($request);
+   
+        return redirect('/tipos');
+    }
+
+    public function elegirTipo()
+    {
+        $tipos = $this->obtenerTodosLosTipos();
+        return view('tipos.elegir', ['tipos' => $tipos]);
+    }
+
+    public function editarTipo(Request $request)
+    {
+        $id = $request->get('tipo_id');
+        $tipo = $this->obtenerUnTipo($id);
+        return view('tipos.editar', ['tipo' => $tipo]);
+    }
+
+    public function actualizarTipo(Request $request)
+    {
+        $this->modificarMarca($request);
+        
+        return redirect('tipos');
+    }
+
+    public function seleccionarTipo()
+    {
+        $tipos = $this->obtenerTodosLosTipos();
+        return view('tipos.seleccionar', ['tipos' => $tipos]);
+    }
+
+    public function eliminarTipo(Request $request)
+    {
+        $this->removerMarca($request);
         
         return redirect('/tipos');
     }

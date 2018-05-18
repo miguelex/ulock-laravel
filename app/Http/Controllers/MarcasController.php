@@ -8,20 +8,12 @@ use ulock\Http\Requests;
 
 use ulock\Http\Requests\UnicoRequest;
 
-class MarcasController extends Controller
+class MarcasController extends ApiController
 {
     public function mostrarMarcas()
     {
         $marcas = $this->obtenerTodosLosmarcas();
         return view('marcas.todos', ['marcas' => $marcas]);
-    }
-
-    protected function obtenerTodosLosMarcas()
-    {
-        $respuesta = $this->realizarPeticion('GET', 'https://ziptest.com.es/marcas');
-        $datos = json_decode($respuesta);
-        $marcas = $datos->data;
-        return $marcas;
     }
 
     public function mostrarMarca()
@@ -36,14 +28,6 @@ class MarcasController extends Controller
         return view('marcas.mostrar', ['marca' => $marca]);
     }
     
-    protected function obtenerUnaMarca($id)
-    {
-        $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/marcas/{$id}");
-        $datos = json_decode($respuesta);
-        $marca = $datos->data;
-        return $marca;
-    }
-
     public function agregarMarca()
     {
         return view('marcas.agregar');
@@ -51,8 +35,8 @@ class MarcasController extends Controller
 
     public function crearMarca(Request $request)
     {
-        $respuesta = $this->realizarPeticion('POST', 'https://ziptest.com.es/marcas', ['form_params' => $request->all()]);
-        
+        $this->almacenarMarca($request);
+
         return redirect('/marcas');
     }
 
@@ -71,8 +55,21 @@ class MarcasController extends Controller
 
     public function actualizarMarca(Request $request)
     {
-        $id = $request->get('id');
-        $respuesta = $this->realizarPeticion('PUT', "https://ziptest.com.es/marcas/{$id}", ['form_params' => $request->except('id')]);
+        $this->modificarMarca($request);
+        
+        return redirect('/marcas');
+    }
+
+    public function seleccionarMarca()
+    {
+        $marcas = $this->obtenerTodosLosMarcas();
+        return view('marcas.seleccionar', ['marcas' => $marcas]);
+    }
+
+    public function eliminarMarca(Request $request)
+    {
+        $this->removerMarca($request);
+        
         return redirect('/marcas');
     }
 }
