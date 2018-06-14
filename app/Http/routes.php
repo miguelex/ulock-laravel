@@ -15,28 +15,88 @@ Route::get('/', function () {
     return view('principal');
 });
 
+
+// Rutas clientes
+
 Route::get('/clientes', 'ClientesController@mostrarClientes');
-Route::get('/tipos', 'TiposController@mostrarTipos');
-Route::get('/marcas', 'MarcasController@mostrarMarcas');
 Route::post('/clientes/unico', 'ClientesController@obtenerCliente');
 Route::get('/clientes/unico', 'ClientesController@mostrarCliente');
-Route::post('/marcas/unico', 'MarcasController@obtenerMarca');
-Route::get('/marcas/unico', 'MarcasController@mostrarMarca');
-Route::post('/tipos/unico', 'TiposController@obtenerTipo');
-Route::get('/tipos/unico', 'TiposController@mostrarTipo');
 Route::post('/clientes/agregar', 'ClientesController@crearCliente');
 Route::get('/clientes/agregar', 'ClientesController@agregarCliente');
-Route::post('/marcas/agregar', 'MarcasController@crearMarca');
-Route::get('/marcas/agregar', 'MarcasController@agregarMarca');
+Route::put('/clientes/actualizar', 'ClientesController@actualizarCliente');
+Route::post('/clientes/actualizar', 'ClientesController@editarCliente');
+Route::get('/clientes/actualizar', 'ClientesController@elegirCliente');
+Route::post('/clientes/eliminar', 'ClientesController@eliminarCliente');
+Route::get('/clientes/eliminar', 'ClientesController@seleccionarCliente');
+
+// ------------------------------------------------------------------------------------
+
+// Rutas clientes especiales
+
+Route::get('/cliente/ver/{id}', 'ClientesController@verCliente');
+Route::get('/cliente/editar/{id}', 'ClientesController@editCliente'); 
+Route::get('/cliente/borrar/{id}', 'ClientesController@borrarCliente'); 
+
+// ------------------------------------------------------------------------------------
+
+// Rutas tipos
+
+Route::get('/tipos', 'TiposController@mostrarTipos');
+Route::post('/tipos/unico', 'TiposController@obtenerTipo');
+Route::get('/tipos/unico', 'TiposController@mostrarTipo');
 Route::post('/tipos/agregar', 'TiposController@crearTipo');
 Route::get('/tipos/agregar', 'TiposController@agregarTipo');
-Route::put('/marcas/actualizar', 'MarcasController@actualizarMarca');
-Route::post('/marcas/actualizar', 'MarcasController@editarMarca');
-Route::get('/marcas/actualizar', 'MarcasController@elegirMarca');
 Route::put('/tipos/actualizar', 'TiposController@actualizarTipo');
 Route::post('/tipos/actualizar', 'TiposController@editarTipo');
 Route::get('/tipos/actualizar', 'TiposController@elegirTipo');
 Route::post('/tipos/eliminar', 'TiposController@eliminarTipo');
 Route::get('/tipos/eliminar', 'TiposController@seleccionarTipo');
+
+// --------------------------------------------------------------------------------------
+
+// Rutas marcas
+
+Route::get('/marcas', 'MarcasController@mostrarMarcas');
+Route::post('/marcas/unico', 'MarcasController@obtenerMarca');
+Route::get('/marcas/unico', 'MarcasController@mostrarMarca');
+Route::post('/marcas/agregar', 'MarcasController@crearMarca');
+Route::get('/marcas/agregar', 'MarcasController@agregarMarca');
+Route::put('/marcas/actualizar', 'MarcasController@actualizarMarca');
+Route::post('/marcas/actualizar', 'MarcasController@editarMarca');
+Route::get('/marcas/actualizar', 'MarcasController@elegirMarca');
 Route::post('/marcas/eliminar', 'MarcasController@eliminarMarca');
 Route::get('/marcas/eliminar', 'MarcasController@seleccionarMarca');
+
+// ----------------------------------------------------------------------------------------
+
+// Rutas dispositivos
+
+Route::get('/dispositivos', 'DispositivosController@mostrarDispositivos');
+
+// ----------------------------------------------------------------------------------------
+
+// Ruta GPS
+
+Route::get('/dispositivos/gps', 'DispositivoGpsController@mostrarDispositivos');
+Route::post('/dispositivos/gps', 'DispositivoGpsController@mostrarPosiciones');
+
+// -----------------------------------------------------------------------------------------
+
+// Rutas accesos
+
+Route::get('/dispositivos/acceso', 'DispositivoGpsController@seleccionarDispositivos');
+Route::post('/dispositivos/acceso', 'DispositivoGpsController@mostrarAccesos');
+
+// -----------------------------------------------------------------------------------------
+
+// Rutas dispositivos por marca
+
+Route::get('/dispositivos/marca', 'DispositivosController@seleccionarMarca');
+Route::post('/dispositivos/marca', 'DispositivosController@mostrarDispositivoMarca');
+
+// -----------------------------------------------------------------------------------------
+
+// Rutas dispositivos por tipos
+
+Route::get('/dispositivos/tipo', 'DispositivosController@seleccionarTipo');
+Route::post('/dispositivos/tipo', 'DispositivosController@mostrarDispositivoTipo');

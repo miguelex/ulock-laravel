@@ -68,7 +68,7 @@ class TiposController extends ApiController
 
     public function eliminarTipo(Request $request)
     {
-        $this->removerMarca($request);
+        $this->removerTipo($request);
         
         return redirect('/tipos');
     }
