@@ -77,16 +77,16 @@
 				<div id="rangoFecha" style="display:none;">
 	           		<label for="">Seleccione número de días: (1 a 30) </label>
 	  				<input type="range" name="rango" min="1" max="30" onchange="updateTextInput(this.value);">
-					<input type="text" id="textInput" value="">
+					<input type="text" id="textInput" value="16">
 	      		</div>
 				
 				<div id="dosFechas" style="display:none;">
 		  			<label for="">Desde el </label>
-					<input type="date" class="form-control" name="fechaInicial" required="required">
+					<input type="date" class="form-control" name="fechaInicial" value="<?php echo date("Y-m-d");?>" required="required">
 
 					<br>
 					<label for=""> Hasta el</label>
-					<input type="date" class="form-control" name="fechaFinal" required="required">
+					<input type="date" class="form-control" name="fechaFinal" value= "<?php echo date("Y-m-d");?>" required="required">
 				</div>
 			</div>
 
