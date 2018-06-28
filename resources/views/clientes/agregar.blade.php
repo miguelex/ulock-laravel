@@ -2,15 +2,6 @@
 
 @section('contenido')		
 		
-		<div class="form-group">
-				<label for="">Idioma/Language</label>
-				<select name="idioma" id="inputIdioma" class="form-control" required="required">
-					<option>-----</option>
-					<option value="1">Español</option>
-					<option value="2">English</option>
-				</select>
-		</div>
-
 		<form action="{{url('/clientes/agregar')}}" method="POST" role="form">
 			{{csrf_field()}}
 			<legend>Ingrese los Datos del Cliente</legend>
@@ -47,7 +38,7 @@
 
 			<div class="form-group">
 				<label for="">País</label>
-				<select name="pais_id" id="inputPais_id" class="form-control" required="required">
+				<select name="pais_id" id="pais_id" class="form-control" required="required">
 					@foreach($paises as $pais)
 					<option value="{{$pais->id}}">{{$pais->nombre}}</option>
 					@endforeach
@@ -55,9 +46,12 @@
 			</div>
 
 			<div class="form-group">
-				<label for="">Provincia</label>
-				<input type="text" class="form-control" name="provincia_id" required>
-			</div>
+	            <label for="">Provincia</label>
+	            <select class="form-control" name="provincia_id" id="provincia_id">
+	              	<option value="0" disable="true" selected="true">=== Selecciona Provincia ===</option>
+	            </select>
+          	</div>
+
 
 			<div class="form-group">
 				<label for="">Genero</label>
@@ -72,4 +66,22 @@
 			<button type="submit" class="btn btn-primary">Crear Cliente</button>
 		</form>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+	      $('#pais_id').on('change', function(e){
+	        console.log(e);
+	        var province_id = e.target.value;
+	        $.get('/provincias?province_id=' + province_id,function(data) {
+	          console.log(data);
+	          $('#provincia_id').empty();
+	          //$('#provincias').append('<option value="0" disable="true" selected="true">== Selecciona Provincia ===</option>');
+
+	          $.each(data, function(index, regenciesObj){
+	            $('#provincia_id').append('<option value="'+ regenciesObj.id +'">'+ regenciesObj.nombre +'</option>');
+	          })
+	        });
+	      });
+      </script>
 @endsection

@@ -75,8 +75,8 @@ class ClientesController extends ApiController
         $id = $request->get('cliente_id');
         $cliente = $this->obtenerUnCliente($id);
         $paises = $this->obtenerTodosLosPaises();
-
-        return view('clientes.editar', ['cliente' => $cliente, 'paises' => $paises]);
+        $provincias = $this->obtenerProvincias($cliente->pais_id);
+        return view('clientes.editar', ['cliente' => $cliente, 'paises' => $paises, 'provincias' => $provincias]);
     }
 
     public function actualizarCliente(Request $request)
@@ -111,8 +111,8 @@ class ClientesController extends ApiController
 
         $cliente = $this->obtenerUncliente($id);
         $paises = $this->obtenerTodosLosPaises();
-
-        return view('clientes.editar', ['cliente' => $cliente, 'paises' => $paises]);
+        $provincias = $this->obtenerProvincias($cliente->pais_id);
+        return view('clientes.editar', ['cliente' => $cliente, 'paises' => $paises, 'provincias' => $provincias]);
     }
 
     public function borrarCliente($id)

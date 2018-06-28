@@ -3,7 +3,8 @@
 namespace ulock\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Input;
 use ulock\Http\Requests;
 
 class ApiController extends Controller
@@ -77,6 +78,22 @@ class ApiController extends Controller
         return $paises;
     }
 
+    protected function obtenerProvinciasPais()
+    {
+        $provincia_id = Input::get('province_id');
+        $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/paises/{$provincia_id}/provincias");
+        $datos = json_decode($respuesta);
+        $provincias = $datos->data;
+        return $provincias;
+    }
+
+    protected function obtenerProvincias($pais)
+    {
+        $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/paises/{$pais}/provincias");
+        $datos = json_decode($respuesta);
+        $provincias = $datos->data;
+        return $provincias;
+    }
     // --------------- METODOS MARCAS -----------------------------------------------------------------
 
     protected function obtenerTodosLosMarcas()

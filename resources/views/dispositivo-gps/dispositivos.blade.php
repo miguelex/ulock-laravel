@@ -2,19 +2,7 @@
 
 @section('contenido')		
 		<script>
-		  //addEventListener('load',inicio,false);
-
-		  /*function inicio()
-		  {
-		    document.getElementById('rango').addEventListener('change',cambioRango,false);
-		  }
-
-		  function cambioRango()
-		  {    
-		    document.getElementById('dias').innerHTML=document.getElementById('rango').value;
-		  }*/
-
-		  //var input = document.getElementById('input');
+		  
 
 		function habilitaCampos(sel) {
 
@@ -80,12 +68,11 @@
 					<input type="text" id="textInput" value="16">
 	      		</div>
 				
-				<div id="dosFechas" style="display:none;">
-		  			<label for="">Desde el </label>
+				<div id="dosFechas" style="display:none;" class="input-group">
+		  			<span class="input-group-addon">Desde el: </span>
+		  			<!-- Fecha inicial y final puestas por defecto para que el atributo required no cause problemas la priemra vez que se carga la pagina -->
 					<input type="date" class="form-control" name="fechaInicial" value="<?php echo date("Y-m-d");?>" required="required">
-
-					<br>
-					<label for=""> Hasta el</label>
+					<span class="input-group-addon">Hasta el: </span>
 					<input type="date" class="form-control" name="fechaFinal" value= "<?php echo date("Y-m-d");?>" required="required">
 				</div>
 			</div>
@@ -99,7 +86,7 @@
 
 		<div class="alert alert-danger">
 			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-			<strong>Ups</strong> No hay dispositivos en este momento
+			<strong>ERROR</strong> No hay dispositivos en este momento
 		</div>
 
 		@endif

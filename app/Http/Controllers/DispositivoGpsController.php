@@ -50,7 +50,7 @@ class DispositivoGpsController extends ApiController
             case 4: // Seguimiento entre un rango de fechas
                     $fechaInicial = strtotime($fechaInicial);
                     $fechaFinal = strtotime($fechaFinal);
-                    $posicionesIntermedia = $this->obtenerUnSeguimiento($dispositivoId, $fechaInicial); // Obtenemos todas las posiciones que sean sueprior a la fecha inicial
+                    $posicionesIntermedia = $this->obtenerUnSeguimiento($dispositivoId, $fechaInicial); // Obtenemos todas las posiciones que sean superior a la fecha inicial
                     $posiciones = array();
                     foreach ($posicionesIntermedia as $pos) // Elimina todas las posiciones que sean superior a la fecha final indicada
                     {

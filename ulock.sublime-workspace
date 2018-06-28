@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"$provincia_id〔variable〕"
+			],
+			[
+				"provincia",
+				"provincia_id"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"en",
+				"endif"
+			],
+			[
+				"op",
+				"opFecha"
+			],
+			[
 				"fecha",
 				"$fechaFinal〔variable〕"
 			],
@@ -128,37 +148,28 @@
 	"buffers":
 	[
 		{
-			"file": "resources/views/principal.blade.php",
+			"file": "app/Http/routes.php",
 			"settings":
 			{
-				"buffer_size": 2141,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/MarcasController.php",
-			"settings":
-			{
-				"buffer_size": 2801,
+				"buffer_size": 4456,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/layouts/master.blade.php",
+			"file": "resources/views/clientes/editar.blade.php",
 			"settings":
 			{
-				"buffer_size": 1365,
+				"buffer_size": 2241,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/TiposController.php",
+			"file": "app/Http/Controllers/ClientesController.php",
 			"settings":
 			{
-				"buffer_size": 2701,
+				"buffer_size": 4068,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -219,19 +230,34 @@
 	[
 		"/C/wamp64/www/ulock",
 		"/C/wamp64/www/ulock/app",
-		"/C/wamp64/www/ulock/public"
+		"/C/wamp64/www/ulock/app/Http",
+		"/C/wamp64/www/ulock/app/Http/Controllers",
+		"/C/wamp64/www/ulock/public",
+		"/C/wamp64/www/ulock/resources",
+		"/C/wamp64/www/ulock/resources/views",
+		"/C/wamp64/www/ulock/resources/views/clientes",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps",
+		"/C/wamp64/www/ulock/resources/views/layouts",
+		"/C/wamp64/www/ulock/resources/views/vendor"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/ulock/resources/views/clientes/ejemplo.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/ApiController.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/agregar.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/ClientesController.php",
+		"/C/wamp64/www/ulock/resources/views/principal.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/dispositivos.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/DispositivoGpsController.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/posiciones.blade.php",
+		"/C/wamp64/www/ulock/resources/views/layouts/master.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/MarcasController.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/TiposController.php",
 		"/C/wamp64/www/ulock/public/assets/css/style.css",
 		"/C/wamp64/www/ulock/public/assets",
-		"/C/wamp64/www/ulock/resources/views/layouts/master.blade.php",
 		"/C/wamp64/www/ulock/app/Http/Controllers/DispositivosController.php",
 		"/C/wamp64/www/ulock/app/Http/routes.php",
 		"/C/wamp64/www/ulock/resources/views/clientes/unico.blade.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/ApiController.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/DispositivoGpsController.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/ClientesController.php",
 		"/C/wamp64/www/ulock/resources/views/clientes/seleccionar.blade.php",
 		"/C/wamp64/www/ulock/resources/views/clientes/editar.blade.php",
 		"/C/wamp64/www/ulock/resources/views/clientes/elegir.blade.php",
@@ -239,18 +265,12 @@
 		"/C/wamp64/www/ulock/resources/views/dispositivos/tipos.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivos/listadoMarca.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivos/marcas.blade.php",
-		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/posiciones.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/accesos.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/lista.blade.php",
-		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/dispositivos.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivos/todos.blade.php",
 		"/C/wamp64/www/ulock/resources/views/clientes/mostrar.blade.php",
-		"/C/wamp64/www/ulock/resources/views/clientes/agregar.blade.php",
 		"/C/Users/Juan - Zip Security/Desktop/guardar.php",
 		"/C/wamp64/www/ulock/resources/js/gmaps.js",
-		"/C/wamp64/www/ulock/resources/views/principal.blade.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/MarcasController.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/TiposController.php",
 		"/C/wamp64/www/ulock/resources/views/marcas/seleccionar.blade.php",
 		"/C/wamp64/www/ulock/resources/views/tipos/seleccionar.blade.php",
 		"/C/wamp64/www/ulock/resources/views/tipos/elegir.blade.php",
@@ -349,8 +369,7 @@
 		"/C/ULock/app/accion_cliente.php",
 		"/C/ULock/app/idioma_pais.php",
 		"/C/ULock/app/ConfiguracionPago.php",
-		"/C/ULock/app/TipoPago.php",
-		"/C/ULock/app/Pago.php"
+		"/C/ULock/app/TipoPago.php"
 	],
 	"find":
 	{
@@ -438,32 +457,35 @@
 			[
 				{
 					"buffer": 0,
-					"file": "resources/views/principal.blade.php",
+					"file": "app/Http/routes.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2141,
+						"buffer_size": 4456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1651,
-								1651
+								4456,
+								4456
 							]
 						],
 						"settings":
 						{
-							"SL.13.region_keys":
+							"SL.15.region_keys":
 							[
 							],
+							"SL.53.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
 							"auto_complete": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1862.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -471,64 +493,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/Http/Controllers/MarcasController.php",
+					"file": "resources/views/clientes/editar.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2801,
+						"buffer_size": 2241,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1216,
-								1216
+								1772,
+								1772
 							]
 						],
 						"settings":
 						{
-							"SL.14.region_keys":
-							[
-							],
-							"SL.15.region_keys":
-							[
-							],
-							"SL.63.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1236.8,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "resources/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1365,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1013,
-								1013
-							]
-						],
-						"settings":
-						{
-							"SL.19.region_keys":
+							"SL.22.region_keys":
 							[
 							],
 							"auto_complete": false,
@@ -536,36 +518,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 512.8,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/Http/Controllers/TiposController.php",
+					"buffer": 2,
+					"file": "app/Http/Controllers/ClientesController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2701,
+						"buffer_size": 4068,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2701,
-								2701
+								2690,
+								2690
 							]
 						],
 						"settings":
 						{
-							"SL.15.region_keys":
+							"SL.26.region_keys":
 							[
-							],
-							"SL.64.region_keys":
-							[
+								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
@@ -573,10 +553,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1482.0,
+						"translation.y": 1196.8,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

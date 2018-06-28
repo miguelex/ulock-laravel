@@ -29,6 +29,7 @@ Route::get('/clientes/actualizar', 'ClientesController@elegirCliente');
 Route::post('/clientes/eliminar', 'ClientesController@eliminarCliente');
 Route::get('/clientes/eliminar', 'ClientesController@seleccionarCliente');
 
+
 // ------------------------------------------------------------------------------------
 
 // Rutas clientes especiales
@@ -100,3 +101,4 @@ Route::post('/dispositivos/marca', 'DispositivosController@mostrarDispositivoMar
 
 Route::get('/dispositivos/tipo', 'DispositivosController@seleccionarTipo');
 Route::post('/dispositivos/tipo', 'DispositivosController@mostrarDispositivoTipo');
+Route::get('/provincias', 'ApiController@obtenerProvinciasPais');

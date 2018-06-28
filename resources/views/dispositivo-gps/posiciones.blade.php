@@ -46,7 +46,7 @@
 
 		<div class="alert alert-danger">
 			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-			<strong>Ups</strong> No hay posiciones en el dispositivo seleccionado
+			<strong>Error</strong> No hay posiciones en el dispositivo seleccionado
 		</div>
 
 		@endif

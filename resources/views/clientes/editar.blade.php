@@ -1,7 +1,8 @@
 @extends('layouts.master')
 
 @section('contenido')		
-		
+
+
 		<form action="{{url('/clientes/actualizar')}}" method="POST" role="form">
 			{{csrf_field()}}
 	
@@ -28,7 +29,7 @@
 
 			<div class="form-group">
 				<label for="">Fecha de nacimiento</label>
-				<input type="date" class="form-control" name="fechaNacimiento" >
+				<input type="date" class="form-control" name="fechaNacimiento" value="{{date('Y-m-d', $cliente->fechaNacimiento)}}">
 			</div>
 
 			<div class="form-group">
@@ -38,28 +39,59 @@
 
 			<div class="form-group">
 				<label for="">País</label>
-				<select name="pais_id" id="inputPais_id" class="form-control" elected="{{$cliente->pais_id}}>
-					@foreach($paises as $pais)
-					<option value="{{$pais->id}}">{{$pais->nombre}}</option>
+				<select name="pais_id" id="pais_id" class="form-control">
+					@foreach($paises as $pais) 
+						<option value="{{$pais->id}}" {{ $cliente->pais_id == $pais->id ? 'selected="selected"' : '' }}>{{$pais->nombre}}</option>
 					@endforeach
 				</select>
 			</div>
 
 			<div class="form-group">
-				<label for="">Provincia</label>
-				<input type="text" class="form-control" name="provincia_id" value="{{$cliente->provincia_id}}" >
-			</div>
+	            <label for="">Provincia</label>
+	            <select class="form-control" name="provincia_id" id="provincia_id">
+	            	@foreach($provincias as $provincia) 
+						<option value="{{$provincia->id}}" {{ $cliente->provincia_id == $provincia->id ? 'selected="selected"' : '' }}>{{$provincia->nombre}}</option>
+					@endforeach
+	            </select>
+          	</div>
 
 			<div class="form-group">
 				<label for="">Genero</label>
-				<select name="genero" id="inputCarrera" class="form-control" selected="{{$cliente->genero}}">
+				<select name="genero" id="inputCarrera" class="form-control" >
 					<option>Por favor seleccione un genero</option>
-					<option value="1">Hombre</option>
-					<option value="2">Mujer</option>
+					@if ($cliente->genero == 1)
+						<option value="1" selected>Hombre</option>
+					@else
+						<option value="1">Hombre</option>
+					@endif
+					@if ($cliente->genero == 2)
+						<option value="2" selected>Mujer</option>
+					@else
+						<option value="2">Mujer</option>
+					@endif
 				</select>
 			</div>
 		
 			<button type="submit" class="btn btn-primary">Actualizar Cliente</button>
 		</form>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+	      $('#pais_id').on('change', function(e){
+	        console.log(e);
+	        var province_id = e.target.value;
+	        $.get('/provincias?province_id=' + province_id,function(data) {
+	          console.log(data);
+	          $('#provincia_id').empty();
+	          //$('#provincias').append('<option value="0" disable="true" selected="true">== Selecciona Provincia ===</option>');
+
+	          $.each(data, function(index, regenciesObj){
+	            $('#provincia_id').append('<option value="'+ regenciesObj.id +'">'+ regenciesObj.nombre +'</option>');
+	          })
+	        });
+	      });
+      </script>
 
 @endsection
