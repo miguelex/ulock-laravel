@@ -8,7 +8,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="//code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link type="text/css" rel="stylesheet" href="{{ asset("assets/css/style.css") }}" />
+	<link media="all" type="text/css" rel="stylesheet" href="{{ asset("assets/css/style.css") }}" />
+	<link media="all" type="text/css" rel="stylesheet" href="{{ asset("assets/css/bootstrap.css")}}" />
+
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
 		
 </head>
 <body>
@@ -38,5 +41,8 @@
 	  		ubrisecurity@ubrisecurity.com</a>.</p>
   		</div>
 	</footer> 
+
+	<script src="{{ asset("assets/js/jquery.js")}}"/></script>
+  	<script src="{{ asset("assets/js/bootstrap.min.js")}}"/></script>
 </body>
 </html>

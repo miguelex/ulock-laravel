@@ -3,6 +3,7 @@
 namespace ulock\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use ulock\Http\Requests;
 use ulock\Http\Requests\UnicoRequest;
@@ -33,7 +34,9 @@ class ClientesController extends ApiController
 
         $id = $request->get('id');
         $cliente = $this->obtenerUncliente($id);
-        return view('clientes.mostrar', ['cliente' => $cliente]);
+        $pais = $this->obtenerUnPais($cliente->pais_id);
+        $provincia = $this->obtenerMiProvincia($cliente->pais_id, $cliente->provincia_id);
+        return view('clientes.mostrar', ['cliente' => $cliente, 'pais' => $pais->nombre, 'provincia' => $provincia->nombre]);
     }
     
     public function verCliente($id)
@@ -41,7 +44,9 @@ class ClientesController extends ApiController
         // Metodo que se usa en el boton ver del la pagina de index de clientes
 
         $cliente = $this->obtenerUncliente($id);
-        return view('clientes.mostrar', ['cliente' => $cliente]);
+        $pais = $this->obtenerUnPais($cliente->pais_id);
+        $provincia = $this->obtenerMiProvincia($cliente->pais_id, $cliente->provincia_id);
+        return view('clientes.mostrar', ['cliente' => $cliente, 'pais' => $pais->nombre, 'provincia' => $provincia->nombre]);
     }
 
     public function agregarCliente()
@@ -54,7 +59,7 @@ class ClientesController extends ApiController
 
     public function crearCliente(Request $request)
     {
-        // Metodo que inserta en la BD el lciente que hemos creado en el metodo anterior
+        // Metodo que inserta en la BD el cliente que hemos creado en el metodo anterior
 
         $this->almacenarCliente($request);
         
@@ -63,7 +68,7 @@ class ClientesController extends ApiController
    
    public function elegirCliente()
     {
-        // Metodo que nos permite seleccioanr un cliente para su posterior edicion
+        // Metodo que nos permite seleccionar un cliente para su posterior edicion
 
         $clientes = $this->obtenerTodosLosClientes();
         return view('clientes.elegir', ['clientes' => $clientes]);

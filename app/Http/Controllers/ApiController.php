@@ -78,6 +78,14 @@ class ApiController extends Controller
         return $paises;
     }
 
+    protected function obtenerUnPais($id)
+    {
+        $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/paises/{$id}");
+        $datos = json_decode($respuesta);
+        $pais = $datos->data;
+        return $pais;
+    }
+
     protected function obtenerProvinciasPais()
     {
         $provincia_id = Input::get('province_id');
@@ -93,6 +101,14 @@ class ApiController extends Controller
         $datos = json_decode($respuesta);
         $provincias = $datos->data;
         return $provincias;
+    }
+
+    protected function obtenerMiProvincia($id_pais, $id_provincia)
+    {
+        $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/paises/{$id_pais}/provincias/{$id_provincia}");
+        $datos = json_decode($respuesta);
+        $provincia = $datos->data;
+        return $provincia;
     }
     // --------------- METODOS MARCAS -----------------------------------------------------------------
 
