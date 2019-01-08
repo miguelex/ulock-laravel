@@ -4,11 +4,15 @@
 		
 		<form action="{{url('/marcas/unico')}}" method="POST" role="form">
 			{{csrf_field()}}
-			<legend>Ingrese el Id de la Marca</legend>
+			<legend>Elija una marca</legend>
 		
 			<div class="form-group">
-				<label for="">Id</label>
-				<input type="number" class="form-control" name="id" required>
+				<label for="">Marca</label>
+				<select name="id" id="inputMarca_id" class="form-control" required="required">
+					@foreach($marcas as $marca)
+					<option value="{{$marca->id}}">{{$marca->nombre}}</option>
+					@endforeach
+				</select>
 			</div>
 		
 			

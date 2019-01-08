@@ -4,11 +4,15 @@
 		
 		<form action="{{url('/tipos/unico')}}" method="POST" role="form">
 			{{csrf_field()}}
-			<legend>Ingrese el Id del Tipo</legend>
+			<legend>Elija un tipo</legend>
 		
 			<div class="form-group">
-				<label for="">Id</label>
-				<input type="number" class="form-control" name="id" required>
+				<label for="">Tipo</label>
+				<select name="id" id="inputTipo_id" class="form-control" required="required">
+					@foreach($tipos as $tipo)
+					<option value="{{$tipo->id}}">{{$tipo->nombre}}</option>
+					@endforeach
+				</select>
 			</div>
 		
 			

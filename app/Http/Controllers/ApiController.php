@@ -50,7 +50,7 @@ class ApiController extends Controller
 
     protected function removerCliente(Request $request)
     {
-        // Llama a la AAPI para eliminar a un cliente de la BD
+        // Llama a la API para eliminar a un cliente de la BD
 
         $id = $request->get('cliente_id');
         
@@ -80,6 +80,8 @@ class ApiController extends Controller
 
     protected function obtenerUnPais($id)
     {
+        // Llama a la APi para obtener los datos del el pais identificado pro $id
+
         $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/paises/{$id}");
         $datos = json_decode($respuesta);
         $pais = $datos->data;
@@ -88,6 +90,8 @@ class ApiController extends Controller
 
     protected function obtenerProvinciasPais()
     {
+        // LLama a la API para obtner el listado de todos las provincias del pais identificado por $id
+
         $provincia_id = Input::get('province_id');
         $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/paises/{$provincia_id}/provincias");
         $datos = json_decode($respuesta);
@@ -97,6 +101,8 @@ class ApiController extends Controller
 
     protected function obtenerProvincias($pais)
     {
+        // llama a la API para obtener el listad ocon todas las provincias que tenemos en la BD
+
         $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/paises/{$pais}/provincias");
         $datos = json_decode($respuesta);
         $provincias = $datos->data;
@@ -105,11 +111,13 @@ class ApiController extends Controller
 
     protected function obtenerMiProvincia($id_pais, $id_provincia)
     {
+        // Llama a la API para obtener los datos de la provincia identificada por $id_provincia. $id_pais solo se usa para la URL
         $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/paises/{$id_pais}/provincias/{$id_provincia}");
         $datos = json_decode($respuesta);
         $provincia = $datos->data;
         return $provincia;
     }
+
     // --------------- METODOS MARCAS -----------------------------------------------------------------
 
     protected function obtenerTodosLosMarcas()
@@ -153,6 +161,13 @@ class ApiController extends Controller
         // Llama a la API para eliminar de la BD la marca que previamente hemos seleccionado
 
         $id = $request->get('marca_id');
+
+        $respuesta = $this->realizarPeticion('DELETE', "https://ziptest.com.es/marcas/{$id}");
+    }
+
+    protected function deleteMarca($id)
+    {
+        // Metodo que atiende la petició nde eliminación desde la pantalla index de marcas
 
         $respuesta = $this->realizarPeticion('DELETE', "https://ziptest.com.es/marcas/{$id}");
     }
@@ -204,6 +219,13 @@ class ApiController extends Controller
         $respuesta = $this->realizarPeticion('DELETE', "https://ziptest.com.es/tipos/{$id}");
     }
 
+    protected function deleteTipo($id)
+    {
+        // Metodo que atiende la petició nde eliminación desde la pantalla index de tipos
+
+        $respuesta = $this->realizarPeticion('DELETE', "https://ziptest.com.es/tipos/{$id}");
+    }
+
     // --------------- METODOS SEGUIMIENTO Y ACCESOS -----------------------------------------------------------------
 
     protected function obtenerUnSeguimiento($id, $fecha)
@@ -235,7 +257,7 @@ class ApiController extends Controller
         $respuesta = $this->realizarPeticion('GET', "https://ziptest.com.es/marcas/{$marcaId}/dispositivos");
         $datos = json_decode($respuesta);
         $dispositivos = $datos->data;
-        return $pdispositivos;
+        return $dispositivos;
     }
 
     protected function obtenerDispositivosTipo($tipoId)
@@ -250,7 +272,7 @@ class ApiController extends Controller
 
     protected function obtenerTodosLosDispositivos()
     {
-        // Llama a la API para obtener un lsitado de todos los dispostivos que tenemso en la BD
+        // Llama a la API para obtener un listado de todos los dispostivos que tenemos en la BD
 
         $respuesta = $this->realizarPeticion('GET', 'https://ziptest.com.es/dispositivos');
         $datos = json_decode($respuesta);
@@ -258,5 +280,18 @@ class ApiController extends Controller
         return $dispositivos;
     }
 
+    protected function buscarCliente (Request $request){
+        $respuesta = $this->realizarPeticion('POST', 'https://ziptest.com.es/auth/login', ['form_params' => $request->all()]);
+        $datos = json_decode($respuesta);
+        $codigo = $respuesta->getStatusCode();
+        if ($codigo == 200)
+        {
+            $cliente = $datos->token;
+        } else {
+            $cliente = $datos->error;
+        }
+        
+        return $cliente;
+    }
 
 }

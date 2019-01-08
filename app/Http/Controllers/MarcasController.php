@@ -23,8 +23,8 @@ class MarcasController extends ApiController
     public function mostrarMarca()
     {
         // Metodo que nos devuelve un select con todas las marcas de la BD y nos permite seleccionar una para usar en el sigueitne metodo
-
-        return view('marcas.unico');
+        $marcas = $this->obtenerTodosLosmarcas();
+        return view('marcas.unico', ['marcas' => $marcas]);
     }
 
     public function obtenerMarca(UnicoRequest $request)
@@ -91,6 +91,33 @@ class MarcasController extends ApiController
         // Metodo que elimina de la BD la marca que seleccionamos en la vista anterior
         
         $this->removerMarca($request);
+        
+        return redirect('/marcas');
+    }
+
+    public function verMarca($id)
+    {
+        // Metodo que se usa en el boton ver del la pagina de index de marcas
+
+        $marca = $this->obtenerUnaMarca($id);
+
+        return view('marcas.mostrar', ['marca' => $marca]);
+    }
+
+    public function editMarca($id)
+    {
+        // Metodo que se usa en el boton editar del la pagina de index de marcas
+
+        $marca = $this->obtenerUnaMarca($id);
+    
+        return view('marcas.editar', ['marca' => $marca]);
+    }
+
+    public function borrarMarca($id)
+    {
+        // Metodo que se usa en el boton borrar del la pagina de index de marcas
+
+        $this->deleteMarca($id);
         
         return redirect('/marcas');
     }

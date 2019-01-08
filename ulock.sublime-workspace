@@ -4,6 +4,90 @@
 		"selected_items":
 		[
 			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"Ubris",
+				"UbriSecurity"
+			],
+			[
+				"paddin",
+				"padding-top\tproperty"
+			],
+			[
+				"padd",
+				"padding-bottom\tproperty"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"loca",
+				"locations〔variable〕"
+			],
+			[
+				"par",
+				"parseFloat〔function〕"
+			],
+			[
+				"cons",
+				"console.log"
+			],
+			[
+				"parse",
+				"parseInt〔function〕"
+			],
+			[
+				"lon",
+				"lonMedia〔variable〕"
+			],
+			[
+				"l",
+				"latitud"
+			],
+			[
+				"lat",
+				"latMedia"
+			],
+			[
+				"la",
+				"latitud"
+			],
+			[
+				"p",
+				"push〔function〕"
+			],
+			[
+				"med",
+				"mediaLongitud〔variable〕"
+			],
+			[
+				"su",
+				"sumaLongitud"
+			],
+			[
+				"bo",
+				"border-radius\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
 				"pro",
 				"$provincia_id〔variable〕"
 			],
@@ -18,10 +102,6 @@
 			[
 				"en",
 				"endif"
-			],
-			[
-				"op",
-				"opFecha"
 			],
 			[
 				"fecha",
@@ -148,46 +228,19 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/routes.php",
+			"file": "app/Http/Controllers/DispositivoGpsController.php",
 			"settings":
 			{
-				"buffer_size": 4385,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/ClientesController.php",
-			"settings":
-			{
-				"buffer_size": 4468,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/ApiController.php",
-			"settings":
-			{
-				"buffer_size": 9376,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/clientes/mostrar.blade.php",
-			"settings":
-			{
-				"buffer_size": 902,
+				"buffer_size": 4118,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "resources/views/layouts/master.blade.php",
+			"file": "resources/views/dispositivo-gps/accesos.blade.php",
 			"settings":
 			{
-				"buffer_size": 1706,
+				"buffer_size": 4000,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -196,7 +249,46 @@
 			"file": "public/assets/css/style.css",
 			"settings":
 			{
-				"buffer_size": 2026,
+				"buffer_size": 6365,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 5700,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/HomeController.php",
+			"settings":
+			{
+				"buffer_size": 537,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "@extends('layouts.master')\n\n@section('contenido')\t\n\n<div class=\"container pt-4\">\n\t<nav aria-label=\"breadcrumb\">\n\t\t<ol class=\"breadcrumb breadcrum\">\n\t\t    <li class=\"breadcrumb-item\"><a href=\"/\">@lang('breadcrumbs.inicio')</a></li>\n\t\t    <li class=\"breadcrumb-item active\" aria-current=\"page\">@lang('breadcrumbs.politica')</li>\n\t\t</ol>\n\t</nav>\n\t<br>\n\t<div class=\"row justify-content-center\">\n\t    <main class=\"col-lg-12 contenido-principal\">\n\t    \t<div class=\"accordion\" id=\"accordionExample\">\n  \t\t\t\t<div class=\"card\">\n    \t\t\t\t<div class=\"card-header\" id=\"headingOne\">\n      \t\t\t\t\t<h5 class=\"mb-0\">\n        \t\t\t\t\t<button class=\"btn btn-link\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n          \t\t\t\t\t\tIntroducción\n        \t\t\t\t\t</button>\n      \t\t\t\t\t</h5>\n    \t\t\t\t</div>\n\n    \t\t\t\t<div id=\"collapseOne\" class=\"collapse show\" aria-labelledby=\"headingOne\" data-parent=\"#accordionExample\">\n      \t\t\t\t\t<div class=\"card-body text-justify\">\n        \t\t\t\t\tUBRISECURITY S.L. (en adelante, UBRISECURITY), entidad mercantil de nacionalidad española, con domicilio en Avenida de España númeor 4, 11600, Ubrique (Cádiz), y C.I.F. Nº B72349830, inscrita en el Registro Mercantil de Cádiz, Folio 131, Tomo 2.271, Hoja  CA-5.313, trata los datos personales de sus clientes que acceden a la página web www.ubrisecurity.com conforme a lo dispuesto en la presente política de privacidad.\n\t\t\t\t\t\t\tLa presente política de privacidad explica como UBRISECURITY trata sus datos, la forma de captarlos, así como los derechos en materia de protección de datos de carácter personal que le corresponden conforme al Reglamento Europeo de Protección de Datos (Reglamento UE 2016/679).\n      \t\t\t\t\t</div>\n    \t\t\t\t</div>\n  \t\t\t\t</div>\n  \t\t\t\t<div class=\"card\">\n    \t\t\t\t<div class=\"card-header\" id=\"headingTwo\">\n      \t\t\t\t\t<h5 class=\"mb-0\">\n        \t\t\t\t\t<button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n          \t\t\t\t\t\tDatos que se solicitan\n        \t\t\t\t\t</button>\n      \t\t\t\t\t</h5>\n    \t\t\t\t</div>\n\n    \t\t\t\t<div id=\"collapseTwo\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordionExample\">\n      \t\t\t\t\t<div class=\"card-body text-justify\">\n        \t\t\t\t\t<p>Mientras se utiliza nuestra página web, pueden captarse distintas categorías de datos personales, que se corresponden principalmente con las siguientes:</p>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>Tarjeta de crédito o medio de pago proporcionado a UBRISECURITY</li>\n\t\t\t\t\t\t\t\t<li>Datos relativos a la identidad del usuario/cliente (nombre y apellidos, dirección de correo electrónico, etc.)</li>\n\t\t\t\t\t\t\t\t<li>Datos relativos a su compra y relacionados con los productos adquiridos (fecha de adquisición, tipo, registros de control, etc.)</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<p>Dichos datos se captan directamente de nuestros clientes y usuarios, de forma voluntaria. Las datos obligatorios se identifican expresamente en los formularios de captación de datos con un asterisco. En caso de no proporcionarlos, no podemos garantizar la prestación del servicio por parte de UBRISECURITY.</p>\n      \t\t\t\t\t</div>\n    \t\t\t\t</div>\n  \t\t\t\t</div>\n  \t\t\t\t<div class=\"card\">\n    \t\t\t\t<div class=\"card-header\" id=\"headingThree\">\n      \t\t\t\t\t<h5 class=\"mb-0\">\n        \t\t\t\t\t<button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\n          \t\t\t\t\t\tFinalidad de los datos\n        \t\t\t\t\t</button>\n      \t\t\t\t\t</h5>\n    \t\t\t\t</div>\n\n    \t\t\t\t<div id=\"collapseThree\" class=\"collapse\" aria-labelledby=\"headingThree\" data-parent=\"#accordionExample\">\n      \t\t\t\t\t<div class=\"card-body text-justify\">\n        \t\t\t\t\t<p>UBRISECURITY gestiona sus datos para facilitar su compra, conocer mejor sus clientes y mejorar y personalizar nuestros servicios, así como asegurar:</p>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>la gestión y seguimiento de pedidos.</li>\n\n\t\t\t\t\t\t\t\t<li>la gestión del registro en línea de sus maletas.</li>\n\n\t\t\t\t\t\t\t\t<li>la gestión del servicio post-venta.</li>\n\n\t\t\t\t\t\t\t\t<li>los informes estadísticos de acceso a nuestra web.</li>\n\n\t\t\t\t\t\t\t\t<li>la medición de la calidad, la satisfacción y la habitualidad en el uso de nuestra página web o servicios prestados por UBRISECURITY.</li>\n\n\t\t\t\t\t\t\t\t<li>la inscripción a la newsletter y el envío de otras comunicaciones comerciales electrónicas.</li>\n\t\t\t\t\t\t\t y, entre otros,\n\t\t\t\t\t\t\t\t<li>la gestión y seguimiento de las actividades de contratación y gestión de candidaturas.</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<p>En caso de que desee suscribirse a nuestra newsletter, UBRISECURITY utilizará su dirección de correo electrónico para poder remitirla. El usuario tendrá la posibilidad de remitir a UBRISECURITY datos adicionales como por ejemplo una dirección postal o un número de teléfono.</p>\n\t\t\t\t\t\t\t<p>UBRISECURITY ofrecerá siempre, a todos sus clientes, una forma de cancelar la suscripción indicada. Para ello, puede seguir las instrucciones incluidas en cada boletín informativo o por correo electrónico a <a href=\"mailto:soporte@ubrisecurity.com\">soporte@ubrisecurity.com</a></p>\n\t\t\t\t\t\t\t<p>En caso de que el cliente o usuario utilice el servicio de referencias de UBRISECURITY para informar a amigos suyos sobre productos disponibles en nuestra página web, le solicitaremos el nombre de su amigo, así como su dirección de correo electrónico. UBRISECURITY enviará automáticamente un correo electrónico invitándole a visitar la página web. En ningún caso los datos del amigo serán conservados por UBRISECURITY, siendo utilizados únicamente una vez para el envío de la comunicación solicitada por el usuario o cliente. En caso que cualquier amigo desee garantizar la supresión de los datos o tenga cualquier duda sobre el tratamiento de los mismos, deberá ponerse en contacto con <a href=\"mailto:soporte@ubrisecurity.com\">soporte@ubrisecurity.com</a></p>\n      \t\t\t\t\t</div>\n    \t\t\t\t</div>\n  \t\t\t\t</div>\n  \t\t\t\t<div class=\"card\">\n    \t\t\t\t<div class=\"card-header\" id=\"headingFour\">\n      \t\t\t\t\t<h5 class=\"mb-0\">\n        \t\t\t\t\t<button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseFour\" aria-expanded=\"false\" aria-controls=\"collapseFour\">\n          \t\t\t\t\t\tComunicación de datos personales\n        \t\t\t\t\t</button>\n      \t\t\t\t\t</h5>\n    \t\t\t\t</div>\n\n    \t\t\t\t<div id=\"collapseFour\" class=\"collapse\" aria-labelledby=\"headingFour\" data-parent=\"#accordionExample\">\n      \t\t\t\t\t<div class=\"card-body text-justify\">\n        \t\t\t\t\t<p>Sus datos personales pueden compartirse, principalmente, con: </p>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>Encargados del tratamiento, entendidos como aquellos proveedores que prestan un servicio a UBRISECURITY, y que tratan los datos personales en su nombre y bajo sus instrucciones.</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<p>Asimismo, sus datos podrán ser comunicados a cualquier autoridad competente, especialmente a la autoridad judicial, policial o administrativa.</p>\n\t\t\t\t\t\t\t<p>UBRISECURITY no comparte, vende o alquila los datos de carácter personal de sus clientes o usuarios de ninguna otra forma que no sea la descrita anteriormente o que, de cualquier otra forma, haya podido informar en distintos momentos.</p>\n      \t\t\t\t\t</div>\n    \t\t\t\t</div>\n  \t\t\t\t</div>\n  \t\t\t\t<div class=\"card\">\n    \t\t\t\t<div class=\"card-header\" id=\"headingFive\">\n      \t\t\t\t\t<h5 class=\"mb-0\">\n        \t\t\t\t\t<button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseFive\" aria-expanded=\"false\" aria-controls=\"collapseFive\">\n          \t\t\t\t\t\tComunicación de datos personales\n        \t\t\t\t\t</button>\n      \t\t\t\t\t</h5>\n    \t\t\t\t</div>\n\n    \t\t\t\t<div id=\"collapseFive\" class=\"collapse\" aria-labelledby=\"headingFive\" data-parent=\"#accordionExample\">\n      \t\t\t\t\t<div class=\"card-body text-justify\">\n        \t\t\t\t\t<p>Sus datos personales pueden compartirse, principalmente, con: </p>\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>Encargados del tratamiento, entendidos como aquellos proveedores que prestan un servicio a UBRISECURITY, y que tratan los datos personales en su nombre y bajo sus instrucciones.</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t<p>Asimismo, sus datos podrán ser comunicados a cualquier autoridad competente, especialmente a la autoridad judicial, policial o administrativa.</p>\n\t\t\t\t\t\t\t<p>UBRISECURITY no comparte, vende o alquila los datos de carácter personal de sus clientes o usuarios de ninguna otra forma que no sea la descrita anteriormente o que, de cualquier otra forma, haya podido informar en distintos momentos.</p>\n      \t\t\t\t\t</div>\n    \t\t\t\t</div>\n  \t\t\t\t</div>\n\t\t\t</div>   \t\t\n\t    </main>\n\t\t\t\t\n\t</div>\n</div>\n\n\t\t\n\n@endsection",
+			"file": "resources/views/home/privacidad.blade.php",
+			"file_size": 7504,
+			"file_write_time": 131910771585473211,
+			"settings":
+			{
+				"buffer_size": 8617,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/layouts/master.blade.php",
+			"settings":
+			{
+				"buffer_size": 5924,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -259,61 +351,94 @@
 		"/C/wamp64/www/ulock/app",
 		"/C/wamp64/www/ulock/app/Http",
 		"/C/wamp64/www/ulock/app/Http/Controllers",
+		"/C/wamp64/www/ulock/app/Http/Middleware",
 		"/C/wamp64/www/ulock/resources",
+		"/C/wamp64/www/ulock/resources/lang",
+		"/C/wamp64/www/ulock/resources/lang/es",
 		"/C/wamp64/www/ulock/resources/views",
-		"/C/wamp64/www/ulock/resources/views/clientes",
 		"/C/wamp64/www/ulock/resources/views/dispositivo-gps",
-		"/C/wamp64/www/ulock/resources/views/layouts",
-		"/C/wamp64/www/ulock/resources/views/vendor"
+		"/C/wamp64/www/ulock/resources/views/home",
+		"/C/wamp64/www/ulock/resources/views/layouts"
 	],
 	"file_history":
 	[
-		"/C/wamp64/www/ulock/.env",
-		"/C/wamp64/www/ulock/resources/views/clientes/editar.blade.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/ApiController.php",
-		"/C/wamp64/www/ulock/resources/views/clientes/ejemplo.blade.php",
-		"/C/wamp64/www/ulock/resources/views/clientes/agregar.blade.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/ClientesController.php",
-		"/C/wamp64/www/ulock/resources/views/principal.blade.php",
-		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/dispositivos.blade.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/DispositivoGpsController.php",
-		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/posiciones.blade.php",
+		"/C/wamp64/www/ulock/resources/lang/es/breadcrumbs.php",
+		"/C/wamp64/www/ulock/resources/views/home/faq.blade.php",
 		"/C/wamp64/www/ulock/resources/views/layouts/master.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/ApiController.php",
+		"/C/wamp64/www/ulock/resources/views/home/index.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/dispositivos.blade.php",
+		"/C/wamp64/www/ulock/app/Http/routes.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/modal.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/ver.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/posiciones.blade.php",
+		"/C/wamp64/www/ulock/resources/views/home/contacto.blade.php",
+		"/C/wamp64/www/ulock/resources/views/home/acerca.blade.php",
+		"/C/wamp64/www/ulock/resources/lang/en/breadcrumbs.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/filtro.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Kernel.php",
+		"/C/wamp64/www/ulock/resources/lang/en/header.php",
+		"/C/wamp64/www/ulock/resources/lang/es/header.php",
+		"/C/wamp64/www/ulock/app/Http/Middleware/SetStyle.php",
+		"/C/wamp64/www/ulock/public/assets/js/popper.min.js",
+		"/C/wamp64/www/ulock/public/assets/js/popper.min.js.map",
+		"/C/wamp64/www/ulock/public/assets/js/popper.js",
+		"/C/wamp64/www/ulock/resources/views/principal.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/accesos.blade.php",
+		"/C/wamp64/www/ulock/resources/lang/en/login.php",
+		"/C/wamp64/www/ulock/resources/views/login.blade.php",
+		"/C/wamp64/www/ulock/public/assets/css/bootstrap.css",
+		"/C/wamp64/www/ulock/public/assets/css/style.css",
+		"/C/wamp64/www/ulock/resources/lang/es/login.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/HomeController.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/DispositivoGpsController.php",
+		"/C/wamp64/www/ulock/public/assets/js/jquery.js",
+		"/C/wamp64/www/ulock/resources/views/home/noticia.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Middleware/SetLang.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/SigfoxController.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/LoginController.php",
 		"/C/wamp64/www/ulock/app/Http/Controllers/MarcasController.php",
 		"/C/wamp64/www/ulock/app/Http/Controllers/TiposController.php",
-		"/C/wamp64/www/ulock/public/assets/css/style.css",
+		"/C/wamp64/www/ulock/app/Http/Controllers/ClientesController.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/todos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/agregar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/mostrar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/mostrar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/elegir.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/editar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/unico.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/unico.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/todos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/todos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/mostrar.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/Controller.php",
+		"/C/wamp64/www/ulock/resources/lang/es/validation.php",
+		"/C/wamp64/www/ulock/resources/lang/es/passwords.php",
+		"/C/wamp64/www/ulock/resources/lang/es/pagination.php",
+		"/C/wamp64/www/ulock/resources/lang/es/auth.php",
+		"/C/wamp64/www/ulock/config/app.php",
+		"/C/wamp64/www/ulock/.env",
+		"/C/wamp64/www/ulock/resources/views/clientes/editar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/ejemplo.blade.php",
 		"/C/wamp64/www/ulock/public/assets",
 		"/C/wamp64/www/ulock/app/Http/Controllers/DispositivosController.php",
-		"/C/wamp64/www/ulock/app/Http/routes.php",
 		"/C/wamp64/www/ulock/resources/views/clientes/unico.blade.php",
 		"/C/wamp64/www/ulock/resources/views/clientes/seleccionar.blade.php",
 		"/C/wamp64/www/ulock/resources/views/clientes/elegir.blade.php",
-		"/C/wamp64/www/ulock/resources/views/clientes/todos.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivos/tipos.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivos/listadoMarca.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivos/marcas.blade.php",
-		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/accesos.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/lista.blade.php",
 		"/C/wamp64/www/ulock/resources/views/dispositivos/todos.blade.php",
-		"/C/wamp64/www/ulock/resources/views/clientes/mostrar.blade.php",
 		"/C/Users/Juan - Zip Security/Desktop/guardar.php",
 		"/C/wamp64/www/ulock/resources/js/gmaps.js",
 		"/C/wamp64/www/ulock/resources/views/marcas/seleccionar.blade.php",
 		"/C/wamp64/www/ulock/resources/views/tipos/seleccionar.blade.php",
 		"/C/wamp64/www/ulock/resources/views/tipos/elegir.blade.php",
 		"/C/wamp64/www/ulock/resources/views/tipos/editar.blade.php",
-		"/C/wamp64/www/ulock/resources/views/marcas/editar.blade.php",
-		"/C/wamp64/www/ulock/resources/views/marcas/elegir.blade.php",
 		"/C/wamp64/www/ulock/resources/views/marcas/agregar.blade.php",
 		"/C/wamp64/www/ulock/resources/views/tipos/agregar.blade.php",
-		"/C/wamp64/www/ulock/resources/views/marcas/mostrar.blade.php",
-		"/C/wamp64/www/ulock/resources/views/tipos/mostrar.blade.php",
-		"/C/wamp64/www/ulock/resources/views/marcas/unico.blade.php",
-		"/C/wamp64/www/ulock/resources/views/tipos/unico.blade.php",
-		"/C/wamp64/www/ulock/resources/views/marcas/todos.blade.php",
-		"/C/wamp64/www/ulock/app/Http/Controllers/Controller.php",
 		"/C/wamp64/www/ulock/app/Http/Requests/UnicoRequest.php",
-		"/C/wamp64/www/ulock/resources/views/tipos/todos.blade.php",
 		"/C/wamp64/www/ulock/database/factories/ModelFactory.php",
 		"/C/ULock/database/migrations/2018_05_02_103010_GpsMigrations.php",
 		"/C/ULock/database/migrations/2018_05_02_103037_AccesoMigrations.php",
@@ -364,38 +489,7 @@
 		"/C/ULock/database/migrations/2018_05_02_102856_ConfiguracionPagosMigrations.php",
 		"/C/ULock/database/migrations/2018_05_02_102803_AccionMigrations.php",
 		"/C/ULock/database/migrations/2018_05_02_102744_TipoPagoMigrations.php",
-		"/C/ULock/database/migrations/2018_05_02_102730_MarcaMigrations.php",
-		"/C/ULock/database/migrations/2018_05_02_102718_TipoMigrations.php",
-		"/C/ULock/database/migrations/2018_05_02_101937_ProvinciaMigrations.php",
-		"/C/ULock/database/migrations/2018_05_02_101922_IdiomaMigrations.php",
-		"/C/ULock/database/migrations/2018_05_02_101904_PaisMigrations.php",
-		"/C/ULock/database/migrations/2018_04_27_091150_ProvinciaMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091125_PaisMigration.php",
-		"/C/ULock/database/migrations/2018_04_30_091150_ProvinciaMigration.php",
-		"/C/ULock/database/migrations/2018_04_30_091338_MovilMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091528_HuellaMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091826_DispositivoTipoORdenMigration.php",
-		"/C/ULock/app/TipoOrden.php",
-		"/C/ULock/database/migrations/2018_04_27_091721_DispositivoMovilMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091748_ClienteDispositivoMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091630_IdiomaPaisMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091658_AccionClienteMigration.php",
-		"/C/ULock/app/Accion.php",
-		"/C/ULock/database/migrations/2018_04_27_090940_IdiomaMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091210_ClienteMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091546_AccesoMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091513_GpsMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091457_TipoOrdenMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091425_ConfiguracionPagoMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091405_DispositivoMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091338_MovilMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091324_AccionMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091301_TipoPagoMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091243_MarcaMigration.php",
-		"/C/ULock/database/migrations/2018_04_27_091225_TipoMigration.php",
-		"/C/ULock/app/accion_cliente.php",
-		"/C/ULock/app/idioma_pais.php",
-		"/C/ULock/app/ConfiguracionPago.php"
+		"/C/ULock/database/migrations/2018_05_02_102730_MarcaMigrations.php"
 	],
 	"find":
 	{
@@ -414,6 +508,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";",
+			"- ",
+			"DELSEY",
+			"delsey",
+			"DELSEY",
+			"p",
+			"delsey",
+			"DELSEY",
+			"h2",
+			"title",
+			"55758a",
+			"5aa3edff",
+			"55758a",
+			"</a>",
+			"<a href=\"#\">",
+			"sociales",
+			"</span>",
+			"<span class=\"sr-only\">",
+			"005db5ff",
+			"span",
+			");\n",
+			"lang",
+			"LANG",
+			"lang",
+			"i",
+			"fondo",
+			"sociales2",
+			"index",
 			"h1",
 			"cliente",
 			"push",
@@ -468,6 +590,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"005db9ff",
+			"5aa3edff",
+			"55758a"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -478,212 +603,117 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/routes.php",
+					"file": "app/Http/Controllers/DispositivoGpsController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4385,
+						"buffer_size": 4118,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								393,
-								393
+								3854,
+								3854
 							]
 						],
 						"settings":
 						{
 							"SL.13.region_keys":
 							[
+								"sublime_linter.protected_regions"
 							],
-							"SL.15.region_keys":
+							"SL.14.region_keys":
 							[
+								"sublime_linter.protected_regions"
 							],
-							"SL.53.region_keys":
+							"SL.23.region_keys":
 							[
 								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 247.2,
+						"translation.y": 1767.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/Http/Controllers/ClientesController.php",
+					"file": "resources/views/dispositivo-gps/accesos.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4468,
+						"buffer_size": 4000,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1842,
-								1842
+								365,
+								3979
 							]
 						],
 						"settings":
 						{
 							"SL.14.region_keys":
 							[
-								"sublime_linter.protected_regions"
 							],
 							"SL.15.region_keys":
 							[
-								"sublime_linter.protected_regions"
 							],
-							"SL.26.region_keys":
+							"SL.20.region_keys":
 							[
-								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 456.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/ApiController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9376,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3714,
-								3714
-							]
-						],
-						"settings":
-						{
-							"SL.24.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1539.2,
+						"translation.y": 1346.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "resources/views/clientes/mostrar.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 902,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								185,
-								185
-							]
-						],
-						"settings":
-						{
-							"SL.51.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "resources/views/layouts/master.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1706,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								920,
-								920
-							]
-						],
-						"settings":
-						{
-							"SL.54.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 2,
 					"file": "public/assets/css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2026,
+						"buffer_size": 6365,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								682
+								4151,
+								4151
 							]
 						],
 						"settings":
 						{
-							"SL.52.region_keys":
+							"SL.15.region_keys":
+							[
+							],
+							"SL.16.region_keys":
+							[
+							],
+							"SL.17.region_keys":
 							[
 							],
 							"syntax": "Packages/CSS/CSS.sublime-syntax",
@@ -691,10 +721,150 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 635.0,
+						"translation.y": 3068.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								719,
+								719
+							]
+						],
+						"settings":
+						{
+							"SL.18.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Http/Controllers/HomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								461,
+								461
+							]
+						],
+						"settings":
+						{
+							"SL.19.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "resources/views/home/privacidad.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7637,
+								7637
+							]
+						],
+						"settings":
+						{
+							"SL.18.region_keys":
+							[
+							],
+							"SL.20.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "resources/views/layouts/master.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3191,
+								3191
+							]
+						],
+						"settings":
+						{
+							"SL.16.region_keys":
+							[
+							],
+							"SL.17.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

@@ -1,0 +1,510 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"pro",
+				"$provincia_id〔variable〕"
+			],
+			[
+				"provincia",
+				"provincia_id"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"en",
+				"endif"
+			],
+			[
+				"fecha",
+				"$fechaFinal〔variable〕"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"getM",
+				"getMinutes〔function〕"
+			],
+			[
+				"getYe",
+				"getFullYear〔function〕"
+			],
+			[
+				"tem",
+				"$temperatura〔variable〕"
+			],
+			[
+				"di",
+				"$dispositivoId〔variable〕"
+			],
+			[
+				"bs3-lis",
+				"bs3-list-group:linked\tbs3-list-group-linked"
+			],
+			[
+				"bs3-c",
+				"bs3-cdn\tbs3-cdn"
+			],
+			[
+				"bs3",
+				"bs3-col\tbs3-col"
+			],
+			[
+				"diso",
+				"d/{d}/dispositivos"
+			],
+			[
+				"reque",
+				"$request〔variable〕"
+			],
+			[
+				"c",
+				"clientes"
+			],
+			[
+				"pais",
+				"pais_id"
+			],
+			[
+				"idio",
+				"idioma_id"
+			],
+			[
+				"estu",
+				"$estudiantes〔variable〕"
+			],
+			[
+				"estudiante",
+				"estudiante_id"
+			],
+			[
+				"es",
+				"estudiantes"
+			],
+			[
+				"crear",
+				"crearRespuestaErronea〔function〕"
+			],
+			[
+				"cu",
+				"$curso〔variable〕"
+			],
+			[
+				"curso",
+				"curso_id"
+			],
+			[
+				"e",
+				"$estudiante〔variable〕"
+			],
+			[
+				"est",
+				"estudiante_id"
+			],
+			[
+				"profesor",
+				"profesor_id"
+			],
+			[
+				"cur",
+				"cursos"
+			],
+			[
+				"arra",
+				"array_rand〔function〕"
+			],
+			[
+				"mt",
+				"mt_rand"
+			],
+			[
+				"bel",
+				"belongsToMany〔function〕"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/ULock/Vagrantfile",
+			"settings":
+			{
+				"buffer_size": 1478,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"mate",
+				"Material Theme: Activate theme"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 741.0
+	},
+	"console":
+	{
+		"height": 171.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/ULock",
+		"/C/ULock/app",
+		"/C/ULock/app/Http",
+		"/C/ULock/app/Http/Controllers",
+		"/C/ULock/public",
+		"/C/ULock/resources",
+		"/C/ULock/resources/views"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/ulock/resources/views/marcas/mostrar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/elegir.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/editar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/unico.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/unico.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/todos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/todos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/mostrar.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/ClientesController.php",
+		"/C/wamp64/www/ulock/public/assets/css/style.css",
+		"/C/wamp64/www/ulock/resources/views/layouts/master.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/Controller.php",
+		"/C/wamp64/www/ulock/resources/lang/es/validation.php",
+		"/C/wamp64/www/ulock/resources/lang/es/passwords.php",
+		"/C/wamp64/www/ulock/resources/lang/es/pagination.php",
+		"/C/wamp64/www/ulock/resources/lang/es/auth.php",
+		"/C/wamp64/www/ulock/config/app.php",
+		"/C/wamp64/www/ulock/.env",
+		"/C/wamp64/www/ulock/resources/views/clientes/editar.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/ApiController.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/ejemplo.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/agregar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/principal.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/dispositivos.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/DispositivoGpsController.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/posiciones.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/MarcasController.php",
+		"/C/wamp64/www/ulock/app/Http/Controllers/TiposController.php",
+		"/C/wamp64/www/ulock/public/assets",
+		"/C/wamp64/www/ulock/app/Http/Controllers/DispositivosController.php",
+		"/C/wamp64/www/ulock/app/Http/routes.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/unico.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/seleccionar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/elegir.blade.php",
+		"/C/wamp64/www/ulock/resources/views/clientes/todos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivos/tipos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivos/listadoMarca.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivos/marcas.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/accesos.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivo-gps/lista.blade.php",
+		"/C/wamp64/www/ulock/resources/views/dispositivos/todos.blade.php",
+		"/C/Users/Juan - Zip Security/Desktop/guardar.php",
+		"/C/wamp64/www/ulock/resources/js/gmaps.js",
+		"/C/wamp64/www/ulock/resources/views/marcas/seleccionar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/seleccionar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/elegir.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/editar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/marcas/agregar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/agregar.blade.php",
+		"/C/wamp64/www/ulock/resources/views/tipos/mostrar.blade.php",
+		"/C/wamp64/www/ulock/app/Http/Requests/UnicoRequest.php",
+		"/C/wamp64/www/ulock/database/factories/ModelFactory.php",
+		"/C/ULock/database/migrations/2018_05_02_103010_GpsMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103037_AccesoMigrations.php",
+		"/C/ULock/app/Http/Controllers/MarcaController.php",
+		"/C/ULock/app/Http/Controllers/IdiomaController.php",
+		"/C/ULock/app/Http/Controllers/DispositivoHuellaController.php",
+		"/C/ULock/app/Http/Controllers/DispositivoAccesoController.php",
+		"/C/ULock/app/Http/Controllers/DispositivoGpsController.php",
+		"/C/ULock/app/Huella.php",
+		"/C/ULock/app/Gps.php",
+		"/C/ULock/app/Acceso.php",
+		"/C/ULock/app/Http/routes.php",
+		"/C/ULock/database/migrations/2018_05_02_102836_DispositivoMigrations.php",
+		"/C/ULock/app/Dispositivo.php",
+		"/C/ULock/app/Http/Controllers/ClienteDispositivoController.php",
+		"/C/ULock/app/Http/Controllers/DispositivoController.php",
+		"/C/ULock/app/Http/Controllers/TipoDispositivoController.php",
+		"/C/ULock/app/Http/Controllers/MarcaDispositivoController.php",
+		"/C/ULock/vendor/illuminate/database/Connection.php",
+		"/C/ULock/app/Movil.php",
+		"/C/ULock/app/Http/Controllers/MovilesController.php",
+		"/C/ULock/app/Cliente.php",
+		"/C/ULock/app/Http/Controllers/ClienteController.php",
+		"/C/ULock/app/Http/Controllers/Controller.php",
+		"/C/ULock/database/migrations/2018_05_02_102702_ClienteMigrations.php",
+		"/C/ULock/app/Http/Controllers/TraduccionController.php",
+		"/C/ULock/app/Pais.php",
+		"/C/ULock/app/Provincia.php",
+		"/C/ULock/app/Http/Controllers/IdiomaPaisController.php",
+		"/C/ULock/app/Http/Controllers/PaisProvinciaController.php",
+		"/C/ULock/app/Http/Controllers/ProvinciaController.php",
+		"/C/ULock/app/Idioma.php",
+		"/C/ULock/app/Http/Controllers/PaisController.php",
+		"/C/ULock/database/migrations/2018_05_02_102816_MovilMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103025_HuellaMigrations.php",
+		"/C/ULock/database/migrations/2018_05_04_073518_add_genero_clientes2.php",
+		"/C/ULock/database/migrations/2018_05_04_073144_add_genero_cliente.php",
+		"/C/ULock/.env",
+		"/C/ULock/app/Tipo.php",
+		"/C/ULock/app/Marca.php",
+		"/C/ULock/app/Http/Controllers/TipoController.php",
+		"/C/ULock/database/migrations/2018_05_02_103236_DispositivoTipoOrdenMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103205_ClienteDispositivoMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103141_DispositivoMovilMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103117_AccionClienteMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_103057_IdiomaPaisMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102924_TipoOrdenPagosMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102856_ConfiguracionPagosMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102803_AccionMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102744_TipoPagoMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102730_MarcaMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_102718_TipoMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_101937_ProvinciaMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_101922_IdiomaMigrations.php",
+		"/C/ULock/database/migrations/2018_05_02_101904_PaisMigrations.php",
+		"/C/ULock/database/migrations/2018_04_27_091150_ProvinciaMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091125_PaisMigration.php",
+		"/C/ULock/database/migrations/2018_04_30_091150_ProvinciaMigration.php",
+		"/C/ULock/database/migrations/2018_04_30_091338_MovilMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091528_HuellaMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091826_DispositivoTipoORdenMigration.php",
+		"/C/ULock/app/TipoOrden.php",
+		"/C/ULock/database/migrations/2018_04_27_091721_DispositivoMovilMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091748_ClienteDispositivoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091630_IdiomaPaisMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091658_AccionClienteMigration.php",
+		"/C/ULock/app/Accion.php",
+		"/C/ULock/database/migrations/2018_04_27_090940_IdiomaMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091210_ClienteMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091546_AccesoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091513_GpsMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091457_TipoOrdenMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091425_ConfiguracionPagoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091405_DispositivoMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091338_MovilMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091324_AccionMigration.php",
+		"/C/ULock/database/migrations/2018_04_27_091301_TipoPagoMigration.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/ULock/Vagrantfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 284.8,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 74.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 136.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ulock.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 339.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

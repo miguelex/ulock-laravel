@@ -11,10 +11,17 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/principal', function () {
     return view('principal');
 });
 
+// Ruta Home
+Route::get('/','HomeController@index');
+Route::get('/faq','HomeController@noticias');
+Route::get('/contacto','HomeController@contacto');
+Route::get('/acerca','HomeController@acerca');
+Route::get('/privacidad','HomeController@privacidad');
+Route::get('/cookies','HomeController@cookies');
 
 // Rutas clientes
 
@@ -55,6 +62,14 @@ Route::get('/tipos/eliminar', 'TiposController@seleccionarTipo');
 
 // --------------------------------------------------------------------------------------
 
+// Rutas tipos especiales
+
+Route::get('/tipo/ver/{id}', 'TiposController@verTipo');
+Route::get('/tipo/editar/{id}', 'TiposController@editTipo'); 
+Route::get('/tipo/borrar/{id}', 'TiposController@borrarTipo'); 
+
+// ------------------------------------------------------------------------------------
+
 // Rutas marcas
 
 Route::get('/marcas', 'MarcasController@mostrarMarcas');
@@ -70,6 +85,14 @@ Route::get('/marcas/eliminar', 'MarcasController@seleccionarMarca');
 
 // ----------------------------------------------------------------------------------------
 
+// Rutas marcas especiales
+
+Route::get('/marca/ver/{id}', 'MarcasController@verMarca');
+Route::get('/marca/editar/{id}', 'MarcasController@editMarca'); 
+Route::get('/marca/borrar/{id}', 'MarcasController@borrarMarca'); 
+
+// ------------------------------------------------------------------------------------
+
 // Rutas dispositivos
 
 Route::get('/dispositivos', 'DispositivosController@mostrarDispositivos');
@@ -80,6 +103,7 @@ Route::get('/dispositivos', 'DispositivosController@mostrarDispositivos');
 
 Route::get('/dispositivos/gps', 'DispositivoGpsController@mostrarDispositivos');
 Route::post('/dispositivos/gps', 'DispositivoGpsController@mostrarPosiciones');
+Route::get('/dispositivos/filtrado', 'DispositivoGpsController@filtrarPosiciones');
 
 // -----------------------------------------------------------------------------------------
 
@@ -102,3 +126,15 @@ Route::post('/dispositivos/marca', 'DispositivosController@mostrarDispositivoMar
 Route::get('/dispositivos/tipo', 'DispositivosController@seleccionarTipo');
 Route::post('/dispositivos/tipo', 'DispositivosController@mostrarDispositivoTipo');
 Route::get('/provincias', 'ApiController@obtenerProvinciasPais');
+
+// -----------------------------------------------------------------------------------------
+
+// Rutas login
+
+Route::get('/login', 'LoginController@principal');
+Route::post('/login', 'LoginController@entrar');
+
+Route::get('lang/{lang}', function($lang) {
+  \Session::put('lang', $lang);
+  return \Redirect::back();
+})->middleware('web')->name('change_lang');

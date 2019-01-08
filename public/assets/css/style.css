@@ -1,114 +1,321 @@
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
+   body {
+       background-color: #ffffff;
+   }
+   
+   h2 {
+       font-size: 2.4rem;
+   }
+   
+   h2 span {
+       font-size: 3.8rem;
+   }
+   
+   h3 {
+       font-size: 2rem;
+   }
+   
+   h3 span {
+       font-size: 3.6rem;
+   }
+   
+   h2,
+   h3 {
+       font-family: 'PT Sans', sans-serif;
+       color: #000000;
+       line-height: 2.4rem;
+   }
+   
+   h2 span,
+   h3 span {
+       font-family: 'PT Sans', cursive;
+       color: #e082a8;
+   }
+
+   a {
+    color: #005db9ff;
+   }
+   /** Sociales **/
+   
+   .banderas ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .banderas ul li {
+       position: relative;
+       display: inline;
+   }
+
+   .sociales ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .sociales ul li {
+       position: relative;
+       display: inline;
+   }
+   
+   .sociales ul li a::before {
+       font-family: 'FontAwesome';
+       display: inline-block;
+       vertical-align: top;
+       padding: 0.4rem;
+       content: '\f08e';
+       -webkit-font-smoothing: antialiased;
+       font-size: 2rem;
+       color: #005db9ff;
+   }
+   
+   .sociales ul li a[href*="facebook.com"]::before {
+       content: '\f230';
+   }
+   
+   .sociales ul li a[href*="twitter.com"]::before {
+       content: '\f081';
+   }
+   
+   .sociales ul li a[href*="instagram.com"]::before {
+       content: '\f16d';
+   }
+   
+   .sociales ul li a[href*="pinterest.com"]::before {
+       content: '\f0d2';
+   }
+   
+   .sociales ul li a[href*="youtube.com"]::before {
+       content: '\f16a';
+   }
+     /** NAVEGACION **/
+   
+   .navegacion {
+       background-color: #005db9ff;
+   }
+   
+   .navbar-light .navbar-toggler {
+       background-color: #ffffff;
+   }
+   
+   .navbar-light .navbar-brand,
+   .navbar-light .navbar-brand:hover {
+       color: #ffffff;
+   }
+   
+   .nav-principal {
+       background-image: url(../img/border_horizontal.png), url(../img/border_horizontal.png);
+       background-repeat: repeat-x;
+       background-position: 0px top, 0px bottom;
+   }
+   
+   .nav-link {
+       color: #ffffff;
+       font-size: 1.4rem;
+       transition: all .5s ease-in-out;
+       font-family: 'PT Sans', sans-serif;
+   }
+   
+   .nav-link:hover {
+       background-color: #005db9ff;
+       color: #000000;
+   }
+   
+   .btn-primary {
+       background-color: #005db9ff;
+       border: none;
+       border-radius: 1;
+       font-family: 'PT Sans', sans-serif;
+       font-size: 1.2rem;
+   }
+   
+
+  .formulario-contacto {
+       border: 2px solid #005db9ff;
+       background-color: #f8f8f8;
+       font-family: 'PT Sans', sans-serif;
+   }
+
+  .breadcrum {
+        background-color: #ffffff;
+  }
+
+  .copyright {
+      background-color: #005db9ff;
+       color: #ffffff;
+       font-size: .8rem;
+   }
+   
+   .hero {
+       position: relative;
+   }
+   
+   .hero h2 {
+       position: absolute;
+       bottom: 2rem;
+       right: 0;
+       padding: 1rem 2rem 1rem 6rem;
+       background-color: #005db9ff;
+       font-family: 'PT Sans', sans-serif;
+       font-weight: 900;
+       font-size: 2.8rem;
+       color: #fff;
+   }
+   
+   .contenido-principal p {
+       line-height: 2rem;
+       font-family: 'PT Sans', sans-serif;
+   }
+
+
+   .titulo {
+      color: #005db9ff;
+      font-family: 'PT Sans', sans-serif;
+   }
+
+   /** Carousel **/
+   
+   .carousel .carousel-caption h3 {
+       font-family: 'PT Sans', sans-serif;
+       font-size: 2rem;
+       font-weight: 900;
+       color: #fff;
+   }
+
+   /** BOTON DESLIZANTE **/
+
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #4CAF50;
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Acceso positivo */
+
+
+
+    .thumbnail {
+     position: relative;
+    }
+    .caption {
+     position: absolute;
+     top: 10%;
+     left: 0;
+     width: 100%;
+     color: white;
+    }
+
+    .fecha {
+      color: #5aa3edff;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 1.2rem;
+      padding-bottom: 1px;
+      padding-top: 1px;
+    }
+
+/* Enlaces pagina principal */
+    .politica ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .politica ul li {
+       position: relative;
+       color: #005db9ff;
+   }
+   
+   .politica ul li a::before {
+       vertical-align: top;
+       padding: 0.4rem;
+       -webkit-font-smoothing: antialiased;
+       font-size: 2rem;
+       color: #005db9ff;
+   }
+
+   .politica a:link{
+      text-decoration: none;
+   }
+
+   .politica a:hover{
+      color: #000000;
+      text-decoration: none;
+   }
+
+   /* ACORDEON */
+
+   .card-header, .card-link, .card-link:hover{
+      background-color: #005db9ff;
+      text-align:left;
+      border-radius: 25px;
+      border: none;
+   }
+
+   .card-header:first-child {
+      border-radius: 25px;
+  }
+
+  .btn-link {
     color: white;
-}
-.footer {
-   position: float;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #000001
-   color: black;
-   text-align: center;
-}
+    text-decoration: none;
+  }
 
-/*
- * Estructura básica para la aplicación Customerdb
- */
- 
-/* El navbar ocupara 50px por ello desplazamos el contenido por ese valor */
-body {
-  padding-top: 50px;
-}
-.navbar-inverse{
-  background-color: #234567;
-}
- 
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
-  border: 0;
-}
- 
-/*
- * Configuración de Sidebar
- */
- 
-/* Oculta para el responsive móvil, lo mostramos después*/
-.sidebar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Añadimos scroll al contenido si es necesario. */
-    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
+  .btn-link:hover {
+    color: white;
+    text-decoration: none;
   }
-}
- 
-/* Barra de navegacion (Sidebar) */
-.nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
-}
- 
- 
-/*
- * Contenido principal
- */
-.main {
-  padding: 20px;
-}
-@media (min-width: 768px) {
-  .main {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-.main .page-header {
-  margin-top: 0;
-} 
+  

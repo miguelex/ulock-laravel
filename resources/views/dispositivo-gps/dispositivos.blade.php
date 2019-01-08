@@ -30,6 +30,7 @@
           document.getElementById('textInput').value=val; 
         }
 
+        
 		</script>  
 
 		@if(sizeof($dispositivos) > 0)
@@ -37,7 +38,7 @@
 		<form action="{{url('/dispositivos/gps')}}" method="POST" role="form">
 			{{csrf_field()}}
 			<legend>Seleccione un Dispositivo</legend>
-		
+
 			<div class="form-group">
 				<label for="">Dispositivo</label>
 				<select name="dispositivo_id" id="inputDispositivo_id" class="form-control" required="required">
@@ -46,7 +47,7 @@
 					<option value="{{$dispositivo->id}}">{{$dispositivo->sigfox}}</option>
 					@endforeach
 				</select>
-				
+
 				<br>
 				<label for="">Fecha</label>
 				<select name="fecha" id="inputFecha" class="form-control" required="required" onChange="habilitaCampos(this)">
@@ -56,6 +57,13 @@
 					<option value="3">Últimos x días</option>
 					<option value="4">Rango de fecha</option>
 				</select>
+
+				<br>
+				<label for="">Obtener tracking</label>
+				<label class="switch">
+  					<input type="checkbox" name="on" checked>
+  					<span class="slider round"></span>
+				</label>
 
 				
 			</div>
@@ -88,7 +96,8 @@
 			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 			<strong>ERROR</strong> No hay dispositivos en este momento
 		</div>
-
+		
+		
 		@endif
 
 @endsection

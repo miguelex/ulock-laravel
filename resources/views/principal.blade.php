@@ -17,6 +17,7 @@
 		<a href="{{url('/tipos/unico')}}" class="list-group-item">Obtener un tipo</a>
 		<a href="{{url('/dispositivos/gps')}}" class="list-group-item">Obtener un seguimiento</a>
 		<a href="{{url('/dispositivos/acceso')}}" class="list-group-item">Obtener lista de accesos</a>
+		<a href="{{url('/dispositivos/filtrado')}}" class="list-group-item">Obtener lista de accesos filtrada</a>
 	</div>
 	<h3>Nuevas altas</h3>
 	<div class="list-group">
@@ -36,4 +37,6 @@
 		<a href="{{url('/marcas/eliminar')}}" class="list-group-item">Eliminar Una Marca</a>
 		<a href="{{url('/tipos/eliminar')}}" class="list-group-item">Eliminar Un Tipo</a>
 	</div>
+
+
 @endsection

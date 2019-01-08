@@ -3,7 +3,6 @@
 namespace ulock\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use ulock\Http\Requests;
 use ulock\Http\Requests\UnicoRequest;

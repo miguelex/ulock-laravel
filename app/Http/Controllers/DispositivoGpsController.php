@@ -29,6 +29,11 @@ class DispositivoGpsController extends ApiController
         $numDias = $request->get('rango'); // numero de dias que vamos a mostrar
         $fechaInicial = $request->get('fechaInicial'); // fecha inicial del rango de fecha
         $fechaFinal = $request->get('fechaFinal'); // fecha final del rango de fecha
+        if ($request->get('on')) {
+            $on = 1;
+        } else {
+            $on = 0;
+        }
 
         switch ($opFecha) {
 
@@ -49,20 +54,20 @@ class DispositivoGpsController extends ApiController
                     break;
             case 4: // Seguimiento entre un rango de fechas
                     $fechaInicial = strtotime($fechaInicial);
-                    $fechaFinal = strtotime($fechaFinal);
+                    $fechaFinal = strtotime ( '+1 day', strtotime ($fechaFinal));
                     $posicionesIntermedia = $this->obtenerUnSeguimiento($dispositivoId, $fechaInicial); // Obtenemos todas las posiciones que sean superior a la fecha inicial
                     $posiciones = array();
                     foreach ($posicionesIntermedia as $pos) // Elimina todas las posiciones que sean superior a la fecha final indicada
                     {
-                        if ($pos->fecha < $fechaFinal)
+                        if ($pos->fecha < $fechaFinal+1)
                         {
                             array_push($posiciones, $pos);
                         }
                     }
                     break;
         }
-               
-        return view('dispositivo-gps.posiciones', ['posiciones' => $posiciones]);
+              
+        return view('dispositivo-gps.posiciones', ['posiciones' => $posiciones, 'on' => $on]);
     }
 
     public function seleccionarDispositivos()
@@ -84,4 +89,14 @@ class DispositivoGpsController extends ApiController
                                   
         return view('dispositivo-gps.accesos', ['posiciones' => $posiciones]);
     }
+
+    public function filtrarPosiciones()
+    {
+        $fecha = date('Y-m-d');
+        $fecha = strtotime($fecha);
+        $posiciones = $this->obtenerUnSeguimiento(7, $fecha);
+
+        return view('dispositivo-gps.filtro', ['posiciones' => $posiciones]);
+    }
+
 }

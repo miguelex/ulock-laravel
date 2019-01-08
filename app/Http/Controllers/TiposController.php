@@ -23,8 +23,8 @@ class TiposController extends ApiController
     public function mostrarTipo()
     {
         // Metodo que nos devuelve uan vista para seleccionar el tipo que queremos comproabar
-
-        return view('tipos.unico');
+        $tipos = $this->obtenerTodosLosTipos();
+        return view('tipos.unico', ['tipos' => $tipos]);
     }
 
     public function obtenerTipo(UnicoRequest $request)
@@ -73,7 +73,7 @@ class TiposController extends ApiController
     {
         // Metodo que actualiza la BD con los nuevos datos que hemos introducido
 
-        $this->modificarMarca($request);
+        $this->modificarTipo($request);
         
         return redirect('tipos');
     }
@@ -91,6 +91,33 @@ class TiposController extends ApiController
         // Metodo que elimina de la BD al tipo que hemos seleccionado en la vista anterior
 
         $this->removerTipo($request);
+        
+        return redirect('/tipos');
+    }
+
+    public function verTipo($id)
+    {
+        // Metodo que se usa en el boton ver del la pagina de index de tipos
+
+        $tipo = $this->obtenerUnTipo($id);
+
+        return view('tipos.mostrar', ['tipo' => $tipo]);
+    }
+
+    public function editTipo($id)
+    {
+        // Metodo que se usa en el boton editar del la pagina de index de tipos
+
+        $tipo = $this->obtenerUnTipo($id);
+    
+        return view('tipos.editar', ['tipo' => $tipo]);
+    }
+
+    public function borrarTipo($id)
+    {
+        // Metodo que se usa en el boton borrar del la pagina de index de tipos
+
+        $this->deleteTipo($id);
         
         return redirect('/tipos');
     }
