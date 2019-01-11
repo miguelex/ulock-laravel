@@ -65,9 +65,10 @@
                         <ul>
                             <li><a href="/privacidad">Política de Privacidad</a></li>
                             <li><a href="/cookies">Política de cookies</a></li>
-                            <li><a href="#">Condiciones de compra</a></li>
-                            <li><a href="#">Términos de uso</a></li>
-                            <li><a href="#">Condiciones de uso</a></li>
+                            <li><a href="/compras">Condiciones de compra</a></li>
+                            <li><a href="/terminos">Términos de uso</a></li>
+                            <li><a href="/aviso">Aviso legal</a></li>
+                            <li><a href="/cancelacion">Cancelaciones</a></li>
                             <li><a href="/faq">Preguntas frecuentes</a></li>
                         </ul>
                     </div>
@@ -96,6 +97,7 @@
                             <li><a href="http://youtube.com"><span class="sr-only">YouTube</span></a></li>
                         </ul>
                     </nav>
+                    <img src="{{ asset("assets/img/metodos_pagos.png")}}"  class="img-fluid d-block mx-auto float-right" alt="metodos de pago">
                 </div>
                 <hr class="w-100">
                 <p class="text-center copyright w-100">Ubrisecurity 2018. Todos los derechos reservados</p>

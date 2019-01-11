@@ -17,28 +17,27 @@
 	    <main class="col-lg-12 contenido-principal">
 	    	<div class="accordion" id="accordionExample">
   				<div class="card border-light">
-    				<div class="card-header" id="headingOne">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    				<div class="card-header text-center" id="headingOne">			
+        					<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h5 class="mb-0">
           						<strong>Introducción</strong>
-        					</button>
-      					</h5>
+                      </h5>
+        					</a>
     				</div>
-
     				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       					<div class="card-body text-justify">
-        					<p>UBRISECURITY S.L. (en adelante, UBRISECURITY), entidad mercantil de nacionalidad española, con domicilio en Avenida de España númeor 4, 11600, Ubrique (Cádiz), y C.I.F. Nº B72349830, inscrita en el Registro Mercantil de Cádiz, Folio 131, Tomo 2.271, Hoja  CA-5.313, trata los datos personales de sus clientes que acceden a la página web www.ubrisecurity.com conforme a lo dispuesto en la presente política de privacidad.</p>
+        					<p>UBRISECURITY S.L. (en adelante, UBRISECURITY), entidad mercantil de nacionalidad española, con domicilio en Avenida de España número 4, 11600, Ubrique (Cádiz), y C.I.F. Nº B72349830, inscrita en el Registro Mercantil de Cádiz, Folio 131, Tomo 2.271, Hoja  CA-5.313, trata los datos personales de sus clientes que acceden a la página web www.ubrisecurity.com conforme a lo dispuesto en la presente política de privacidad.</p>
 							<p>La presente política de privacidad explica como UBRISECURITY trata sus datos, la forma de captarlos, así como los derechos en materia de protección de datos de carácter personal que le corresponden conforme al Reglamento Europeo de Protección de Datos (Reglamento UE 2016/679).</p>
       					</div>
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingTwo">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          						<strong>Datos que se solicitan</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingTwo">
+      					<a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <h5 class="mb-0">
+                      <strong>Datos que se solicitan</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -54,21 +53,21 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingThree">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          						<strong>Finalidad de los datos</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingThree">
+      					<a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <h5 class="mb-0">
+                      <strong>Finalidad de los datos</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       					<div class="card-body text-justify">
-        					<p>UBRISECURITY gestiona sus datos para facilitar su compra, conocer mejor sus clientes y mejorar y personalizar nuestros servicios, así como asegurar:</p>
+        					<p>UBRISECURITY gestiona sus datos para facilitar su compra, conocer mejor sus clientes, mejorar y personalizar nuestros servicios, así como asegurar:</p>
 							<ul>
 								<li>la gestión y seguimiento de pedidos.</li>
 
-								<li>la gestión del registro en línea de sus maletas.</li>
+								<li>la gestión del registro en línea de sus dispositivos.</li>
 
 								<li>la gestión del servicio post-venta.</li>
 
@@ -87,12 +86,12 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingFour">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          						<strong>Comunicación de datos personales</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingFour">
+      					<a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <h5 class="mb-0">
+                      <strong>Comunicación de los datos personales</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
@@ -107,12 +106,12 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingFive">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          						<strong>Conservación de datos personales</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingFive">
+      					<a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <h5 class="mb-0">
+                      <strong>Conservación de datos personales</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
@@ -124,12 +123,12 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingSix">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          						<strong>Redes Sociales</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingSix">
+      					<a data-toggle="collapse" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    <h5 class="mb-0">
+                      <strong>Redes sociales</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
@@ -139,12 +138,12 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingSeven">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-          						<strong>Promociones, concursos y/o juegos</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingSeven">
+      					<a data-toggle="collapse" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    <h5 class="mb-0">
+                      <strong>Promociones, concursos y/o juegos</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
@@ -155,12 +154,12 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingEight">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-          						<strong>Derechos</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingEight">
+      					<a data-toggle="collapse" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                    <h5 class="mb-0">
+                      <strong>Derechos</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
@@ -169,18 +168,18 @@
 							Para ejercitar sus derechos, puede contactar directamente con UBRISECURITY por correo electrónico a la dirección <a href="mailto:soporte@ubrisecurity.com">soporte@ubrisecurity.com</a></p>
 							
 							<p>A fin de garantizar la confidencialidad y la protección de sus datos personales, deberemos identificarle a fin de responder a cualquier solicitud. Para ello, se le solicitará de adjuntar o remitir copia de un documento oficial de identidad, carné de conducir o pasaporte.</p>
-							<p>Si sus datos de carácter personal no son exactos, completos o actualizados, le agradeceremos que nos lo comunique al departamento de Data Privacy indicado anteriormente.</p>
+							<p>Si sus datos de carácter personal no son exactos, completos o actualizados, le agradeceremos que nos lo comunique a <a href="mailto:soporte@ubrisecurity.com">soporte@ubrisecurity.com</a.</p>
 							<p>Todas las solicitudes serán tratadas en el menor plazo posible de conformidad con lo establecido en la normativa vigente.</p>							
       					</div>
     				</div>
   				</div>
 				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingNine">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-          						<strong>Seguridad</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingNine">
+      					<a data-toggle="collapse" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                    <h5 class="mb-0">
+                      <strong>Seguridad</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
@@ -196,34 +195,34 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingTen">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-          						<strong>Cookies</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingTen">
+      					<a data-toggle="collapse" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                    <h5 class="mb-0">
+                      <strong>Cookies</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
       					<div class="card-body text-justify">
         					<p>La presente página web utiliza cookies para gestionar determinados aspectos técnicos y de funcionamiento de dicha página web, así como con finalidades estadísticas y analíticas, y finalidades publicitarias.</p>
 							
-							<p>Para más información sobre como utilizamos las Cookies, puede acceder a nuestra Política de Cookies.</p>				
+							<p>Para más información sobre como utilizamos las Cookies, puede acceder a nuestra <a href="/cookies">Política de Cookies.</a></p>				
       					</div>
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingEleven">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-          						<strong>Actualizaciones de nuestra política de privacidad</strong>
-        					</button>
-      					</h5>
+    				<div class="card-header text-center" id="headingEleven">
+      					<a data-toggle="collapse" href="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                    <h5 class="mb-0">
+                      <strong>Actualizaciones de nuestra política de seguridad</strong>
+                      </h5>
+                  </a>
     				</div>
 
     				<div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
       					<div class="card-body text-justify">
-        					<p>La presente política de privacidad es susceptible de modificarse y actualizarse en cualquier momento por DELSEY, por lo que le recomendamos que la compruebe regularmente.</p>
+        					<p>La presente política de privacidad es susceptible de modificarse y actualizarse en cualquier momento por UBRISECURITY, por lo que le recomendamos que la compruebe regularmente.</p>
 							
 							<p>La última modificación se realizó el: 04/01/2019</p>				
       					</div>

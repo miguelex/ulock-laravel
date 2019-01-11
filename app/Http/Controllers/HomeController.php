@@ -39,4 +39,21 @@ class HomeController extends Controller
 	{
 		return view('home.cookies');
 	}
+
+	public function compras()
+	{
+		return view('home.compras');
+	}
+	public function aviso()
+	{
+		return view('home.aviso');
+	}
+	public function cancelacion()
+	{
+		return view('home.cancelacion');
+	}
+	public function terminos()
+	{
+		return view('home.terminos');
+	}
 }

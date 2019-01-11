@@ -21,7 +21,7 @@
    h2,
    h3 {
        font-family: 'PT Sans', sans-serif;
-       color: #000000;
+       color: #005db9;
        line-height: 2.4rem;
    }
    
@@ -309,13 +309,20 @@ input:checked + .slider:before {
       border-radius: 25px;
   }
 
-  .btn-link {
+  .card-header a {
     color: white;
     text-decoration: none;
   }
 
-  .btn-link:hover {
+  .card-header a:hover {
     color: white;
     text-decoration: none;
   }
   
+
+  /* 
+
+    Verde: 15/1209//0 0.5
+    rojo: 255/0/0 0.65
+
+  */

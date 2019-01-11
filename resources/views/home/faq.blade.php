@@ -18,13 +18,13 @@
 	    <main class="col-lg-12 contenido-principal">
 	    	<div class="accordion" id="accordionExample">
   				<div class="card border-light">
-    				<div class="card-header" id="headingOne">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          						<strong>Pregunta 1</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingOne">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h5 class="mb-0">
+                      <strong>Pregunta 1</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       					<div class="card-body text-justify">
@@ -33,13 +33,13 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingTwo">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          						<strong>Pregunta 2</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingTwo">
+                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <h5 class="mb-0">
+                      <strong>Pregunta 2</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       					<div class="card-body text-justify">
@@ -47,13 +47,13 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingThree">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          						<strong>Pregunta 3</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingThree">
+                <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <h5 class="mb-0">
+                      <strong>Pregunta 3</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       					<div class="card-body text-justify">

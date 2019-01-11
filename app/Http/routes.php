@@ -22,6 +22,10 @@ Route::get('/contacto','HomeController@contacto');
 Route::get('/acerca','HomeController@acerca');
 Route::get('/privacidad','HomeController@privacidad');
 Route::get('/cookies','HomeController@cookies');
+Route::get('/compras','HomeController@compras');
+Route::get('/aviso','HomeController@aviso');
+Route::get('/cancelacion','HomeController@cancelacion');
+Route::get('/terminos','HomeController@terminos');
 
 // Rutas clientes
 

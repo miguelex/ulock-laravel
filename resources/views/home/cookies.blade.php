@@ -17,13 +17,13 @@
 	    <main class="col-lg-12 contenido-principal">
 	    	<div class="accordion" id="accordionExample">
   				<div class="card border-light">
-    				<div class="card-header" id="headingOne">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          						<strong>Cuestiones generales</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingOne">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h5 class="mb-0">
+                      <strong>Cuestiones generales</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       					<div class="card-body text-justify">
@@ -32,17 +32,17 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingTwo">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          						<strong>Definición de cookies</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingTwo">
+                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <h5 class="mb-0">
+                      <strong>Definición de cookies</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       					<div class="card-body text-justify">
-        					<p>Las cookies son unos datos que utiliza un servidor para enviar información de estado al navegador de un usuario, y dicho navegador para reenviar la información de estado al servidor de origen.:</p>
+        					<p>Las cookies son unos datos que utiliza un servidor para enviar información de estado al navegador de un usuario, y dicho navegador para reenviar la información de estado al servidor de origen.</p>
 							    <p>La información de estado puede ser, por ejemplo, un identificador de sesión, el idioma, una fecha de vencimiento, un dominio de respuesta, etc.</p>
                   <p>Las cookies permiten conservar, durante su periodo de validez, información de estado cuando un navegador accede a distintas páginas de un sitio web o cuando dicho navegador vuelve posteriormente a ese sitio web.</p>
                   <p>Solo el emisor de una cookie puede leer o modificar la información que contiene.</p>
@@ -50,13 +50,13 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingThree">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          						<strong>Tipos de cookies</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingThree">
+                <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <h5 class="mb-0">
+                      <strong>Tipos de cookies</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       					<div class="card-body text-justify">
@@ -70,13 +70,13 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingFour">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          						<strong>Uso de las cookies por parte de UBRISECURITY</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingFour">
+                <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <h5 class="mb-0">
+                      <strong>Uso de las cookies por parte de UBRISECURITY</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
       					<div class="card-body text-justify">
@@ -97,13 +97,13 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingFive">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          						<strong>Cookies que usamos</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingFive">
+                <a data-toggle="collapse" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <h5 class="mb-0">
+                      <strong>Cookies que usamos</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
       					<div class="card-body text-justify">
@@ -170,17 +170,17 @@
     				</div>
   				</div>
   				<div class="card border-light mt-2">
-    				<div class="card-header" id="headingSix">
-      					<h5 class="mb-0">
-        					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          						<strong>Más información</strong>
-        					</button>
-      					</h5>
-    				</div>
+    				<div class="card-header text-center" id="headingSix">
+                <a data-toggle="collapse" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    <h5 class="mb-0">
+                      <strong>Más información</strong>
+                      </h5>
+                  </a>
+            </div>
 
     				<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
       					<div class="card-body text-justify">
-        					<p>Para más información sobre el uso de las cookies o sus datos personales, puede consultar nuestra Política de Privacidad o bien contactar con nosotros a la dirección electrónica <a href="mailto:soporte@ubrisecurity.com">soporte@ubrisecurity.com</a>.</p>							
+        					<p>Para más información sobre el uso de las cookies o sus datos personales, puede consultar nuestra <a href="/privacidad">Política de Privacidad</a> o bien contactar con nosotros a la dirección electrónica <a href="mailto:soporte@ubrisecurity.com">soporte@ubrisecurity.com</a>.</p>							
       					</div>
     				</div>
   				</div>
